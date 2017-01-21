@@ -521,6 +521,12 @@ body {
   }
  }
 
+@media (max-width:650px) {
+.grid-pics figure {
+  width: 100%;
+  display: inline-block;
+}
+}
 
 @media only screen and (min-width:542px) and (max-width:650px) {
   .content-1 article {
@@ -544,8 +550,6 @@ body {
     width: auto;
     margin: 0 auto;
   }
-  .content-footer .contact-link h6 {
-  }
   .content-footer {
     margin-bottom: 0px;
     padding-bottom: 10px;
@@ -556,7 +560,6 @@ body {
   .content-footer .wrapper {
     text-align: center;
     margin: 0px 0px 0px 0px;
-    margin-left: 5px;
   }
 }
 
