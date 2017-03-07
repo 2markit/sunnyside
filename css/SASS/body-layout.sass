@@ -1,18 +1,19 @@
 html
   height: 100%
 
-
+/* Background pattern from Subtle Patterns */
 body
+  background:
+    image: url(../images/symphony-bg.png)
+    opacity: .90
   position: relative
   margin: 0 auto
   min-height: 100%
 
-
-
-
 body::-webkit-scrollbar
   width: 0
   background-color: rgba(128, 172, 74,.80)
+
 
 
 .vid-pic
@@ -51,21 +52,18 @@ body::-webkit-scrollbar
 
 .collapsible-accordion
   box-shadow: none
-  border-color: #fff
+  border-color: rgba(255,255,255,0)
+  overflow: visible
 
-.carousel-item
-  height: 180px
+  .carousel-item
+    height: 200px
 
-
-.carousel
-  height: 180px
-
-  img
-    margin-top: 37.5px
-    margin-bottom: 37.5px
-    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
-    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
-    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    img
+      margin-top: 37.5px
+      margin-bottom: 37.5px
+      -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+      box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
 
 
 .title
@@ -75,12 +73,13 @@ body::-webkit-scrollbar
   padding-bottom: 25px
   padding-top: 25px
 
+
 .content-1
 
   article
     max-width: 940px
     margin: auto
-    padding: 0px 50px 0px 50px
+    padding: 0px 0px 0px 0px
 
   h1
     margin: 0 auto
@@ -94,8 +93,8 @@ body::-webkit-scrollbar
 
 .fadein
   position: relative
+  top: -25px
   width: 100%
-  height: 475px
   margin: 0 auto
 
 .fadein img
@@ -151,61 +150,38 @@ body::-webkit-scrollbar
 
 
 .side-home
-  padding: 70px 35px 25px 0px
+  padding: 110px 35px 25px 0px
   margin: 0px 0px 0px 0px
   width: 50px
-  max-height: 400px
-  float: left
-  overflow: hidden
-
-
-
-.side-about
-  padding: 70px 35px 25px 0px
-  margin: 0px 0px 0px 0px
-  width: 50px
+  max-height: 535px
   float: left
   overflow: hidden
 
 
 .map
-  position: relative
-  width: 100%
-  padding: 0
   width: inherit
-  margin: auto
+  padding: auto
+  padding-bottom: 50px
   float: left
+  margin: auto
 
   .map-frame
     height: 350px
     width: 450px
-    position: relative
-    padding: 0
+    padding: auto
     margin: auto
     border: 0
     -webkit-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
     box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
 
-
-.contact-text
-  padding-top: 50px
-  margin-right: 100px
-  float: right
-
-  h6
-    line-height: 2.5
-    font-size: 18px
-
-.contact-info
-  background-color: inherit
+.lawn-tips
   margin: 0 auto
-  margin-top: 95px
   margin-bottom: 200px
-  padding: 0px 50px 0px 50px
+  padding: 0px 0px 0px 0px
 
   article
-    max-width: 940px
+    max-width: 500px
     margin: 0 auto
   h3
     padding-bottom: 50px
@@ -223,16 +199,131 @@ body::-webkit-scrollbar
     padding: 0px 50px 0px 50px
 
 
+.lawn-pic
+  size: 50%
+  padding-left: auto
+  padding-right: auto
+  margin: auto
 
-.content-2
-  background-color: inherit
-  /**background:
-    image: (linear-gradient(180deg, rgba(128, 172, 74, .175) 0%, rgba(128, 172, 74,.175) 10%, rgba(128, 172, 74, .200) 20%,  rgba(128, 172, 74, .300) 30%,  rgba(128, 172, 74, .400) 40%, rgba(128, 172, 74,.500) 50%,  rgba(128, 172, 74, .650) 60%,  rgba(128, 172, 74, .775) 70%), url(../images/flower-background.jpg))
-    size: 100%
-    opacity: .95**\
+.pages-info
+  margin: 0 auto
+  padding: 0px 0px 0px 0px
+
+  article
+    max-width: 800px
+    margin: 0 auto
+  h3
+    padding-bottom: 50px
+    margin: 0 auto
+    text-align: left
+
+  p
+    margin: 0 auto
+    text-align: left
+    padding: 0px 50px 0px 50px
+
+  ul
+    margin: 0 auto
+    text-align: left
+    padding: 0px 50px 0px 50px
+
+
+.pages-text
+  float: right
+
+  h6
+    padding: 0px 25px 0px 0px
+    font-weight: normal
+    color: rgba(0,0,0,0.87)
+    margin-top: 0px
+    max-width: 500px
+
+  h5
+    padding: 0px 25px 0px 0px
+    font-weight: normal
+    color: rgba(0,0,0,0.87)
+    margin-top: 0px
+    max-width: 500px
+
+
+.contact-text
+  float: right
+  padding: 25px
+
+  h6
+    padding: auto
+    max-width: 500px
+
+  h5
+    padding: auto
+    padding-left: 25px
+    max-width: 500px
+
+
+
+.season
+  position: relative
+  max-height: 200px
+  margin-bottom: -25px
+  margin: auto
+  left: 0
+
+  .season-frame
+    position: relative
+    padding: 0
+    height: 150px
+    margin: 0 auto
+    border-radius: 15px
+    border: 0
+
+  .season-text
+    float: right
+    text-align: right
+    max-width: inherit
+    padding-right: 25px
+    padding-top: 0px
+    border-bottom: 3px solid rgb(128, 172, 74)
+
+  .season-title
+    position: relative
+    text-transform: uppercase
+    color:  rgb(128, 172, 74)
+
+
+
+
+.contact-info
   margin: 0 auto
   margin-top: 95px
-  padding: 0px 50px 50px 50px
+  margin-bottom: 200px
+  padding: 0px 0px 0px 0px
+
+  article
+    max-width: 1000px
+    margin: 0 auto
+  h3
+    padding-bottom: 50px
+    margin: 0 auto
+    text-align: left
+
+  h6
+
+  p
+    margin: 0 auto
+    text-align: left
+    padding: 0px 50px 25px 50px
+
+  ul
+    margin: 0 auto
+    text-align: left
+    padding: 0px 50px 0px 50px
+
+
+
+.content-2
+  margin: 0 auto
+  margin-top: 95px
+  padding: 0px 0px 50px 0px
 
   article
     max-width: 940px
@@ -252,10 +343,33 @@ body::-webkit-scrollbar
     text-align: left
     padding: 0px 50px 0px 50px
 
+
+  .row
+    margin: auto
+    padding: auto
+    width: inherit
+
+    .col
+
+      img
+        border-radius: 500px
+        width: 100%
+        -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+        -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+        box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+      .len-bio
+        bottom: 0
+        float: left
+
+      .renne-bio
+        bottom: 0
+        float: right
+
+
 .content-pages
-  background-color: inherit
   margin: 0 auto
-  padding: 0px 50px 50px 50px
+  padding: 0px 0px 50px 0px
 
   article
     max-width: 940px
@@ -283,20 +397,29 @@ body::-webkit-scrollbar
 
 
 .content-3
-  background-color: inherit
-  /**background:
-    image: (linear-gradient(180deg, rgba(128, 172, 74, .175) 0%, rgba(128, 172, 74,.175) 10%, rgba(128, 172, 74, .200) 20%,  rgba(128, 172, 74, .300) 30%,  rgba(128, 172, 74, .400) 40%, rgba(128, 172, 74,.500) 50%,  rgba(128, 172, 74, .650) 60%,  rgba(128, 172, 74, .775) 70%), url(../images/flower-background.jpg))
-    size: 100%
-    opacity: .95**\
   margin: 0 auto
   margin-top: 95px
-  padding: 0px 50px 50px 50px
+  padding: 0px 0px 50px 0px
+
+  .collapsible-header
+    padding-left: 0px
+    line-height: 0
+    max-height: 250px
+    max-width: 500px
+    border-radius: 15px
+    -webkit-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+    box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+    h3
+      padding-bottom: 50px
+      margin: 0 auto
+      text-align: center
 
   article
     max-width: 940px
     margin: 0 auto
+
   h3
-    padding-bottom: 50px
     margin: 0 auto
     text-align: center
 
@@ -311,13 +434,8 @@ body::-webkit-scrollbar
     padding: 0px 50px 0px 50px
 
 .content-4
-  background-color: inherit
-  /**background:
-    image: (linear-gradient(180deg, rgba(128, 172, 74, .175) 0%, rgba(128, 172, 74,.175) 10%, rgba(128, 172, 74, .200) 20%,  rgba(128, 172, 74, .300) 30%,  rgba(128, 172, 74, .400) 40%, rgba(128, 172, 74,.500) 50%,  rgba(128, 172, 74, .650) 60%,  rgba(128, 172, 74, .775) 70%), url(../images/flower-background.jpg))
-    size: 100%
-    opacity: .95**\
   margin: 0 auto
-  padding: 285px 50px 145px 50px
+  padding: 285px 0px 145px 0px
   margin-top: -95px
 
   article
@@ -340,45 +458,14 @@ body::-webkit-scrollbar
 
 
 .content-about
-  background-color: inherit
-  /**background:
-    image: (linear-gradient(180deg, rgba(128, 172, 74, .175) 0%, rgba(128, 172, 74,.175) 10%, rgba(128, 172, 74, .200) 20%,  rgba(128, 172, 74, .300) 30%,  rgba(128, 172, 74, .400) 40%, rgba(128, 172, 74,.500) 50%,  rgba(128, 172, 74, .650) 60%,  rgba(128, 172, 74, .775) 70%), url(../images/flower-background.jpg))
-    size: 100%
-    opacity: .95**\
   margin: 0 auto
   margin-top: 95px
-  padding: 0px 50px 50px 50px
+  padding: 0px 0px 0px 0px
 
-
-
-  .row
-    margin: auto
-    padding: auto
-    width: inherit
-
-    .col
-      display: inline-block
-      padding-top: 50px
-      padding-bottom: 50px
-      padding-left: 115px
-      padding-right: 115px
-
-      img
-        border-radius: 15px
-        size: 100%
-        -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
-        -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
-        box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
-
-      .len-bio
-        float: left
-
-      .renne-bio
-        float: right
 
 
   article
-    max-width: 940px
+    max-width: 840px
     margin: 0 auto
   h3
     padding-bottom: 50px
@@ -388,7 +475,7 @@ body::-webkit-scrollbar
   p
     margin: 0 auto
     text-align: left
-    padding: 0px 50px 0px 50px
+    padding: 0px 25px 0px 50px
 
   ul
     margin: 0 auto
@@ -397,13 +484,8 @@ body::-webkit-scrollbar
 
 
 .content-about2
-  background-color: inherit
-  /**background:
-    image: (linear-gradient(180deg, rgba(128, 172, 74, .175) 0%, rgba(128, 172, 74,.175) 10%, rgba(128, 172, 74, .200) 20%,  rgba(128, 172, 74, .300) 30%,  rgba(128, 172, 74, .400) 40%, rgba(128, 172, 74,.500) 50%,  rgba(128, 172, 74, .650) 60%,  rgba(128, 172, 74, .775) 70%), url(../images/flower-background.jpg))
-    size: 100%
-    opacity: .95**\
   margin: 0 auto
-  padding: 50px 50px 145px 50px
+  padding: 50px 0px 145px 0px
 
   article
     max-width: 940px
