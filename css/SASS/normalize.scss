@@ -426,8 +426,8 @@ th {
   padding: 0;
 }
 
-.fadein { position:relative; width:100%; height:650px; margin: 0 auto;}
-.fadein img { position:absolute; width: 100%; margin: 0 auto;}
+.fadein { position:relative; width:100%; height:375px; margin: 0 auto;}
+.fadein img { position:absolute; margin: 0 auto;}
 
 @mixin radial-gradient($from, $to) {
   background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
@@ -526,13 +526,10 @@ body {
 
 @media (max-width:542px) {
   .content-1 {
-    height: 400px;
   }
   .content-1 article {
-    max-width: 300px;
   }
   .content-1 .logo {
-    width: 300px;
   }
   .content-3 .grid-pics figure {
     width: 100%;
@@ -548,37 +545,19 @@ body {
 
 @media only screen and (min-width:542px) and (max-width:650px) {
   .content-1 article {
-    max-width: 400px;
-  }
-  .content-1 .logo {
-    width: 400px;
   }
  }
 
 
 @media (max-width: 700px) {
-  .header-fixed {
-    height: 55px;
+  #top.content-1 {
+    height:275px;
   }
-  .header-fixed nav .header-menu {
-    margin-top: 10px;
-  }
-  .header-fixed nav .header-menu:hover {
-    margin-top: 10px;
-  }
-  .header-fixed .logo-img {
-    height: 35px;
-  }
-  .content-1 {
-    position:relative;
-    width: 700px;
-    height:256px;
-    margin-top: 55px
+  .fadein {
+    height:275px;
   }
   .fadein img {
-    position:absolute;
-    max-width: 700px;
-    margin: 0 auto;
+    height:275px;
   }
   .content-footer {
     margin-bottom: 0px;
@@ -593,70 +572,91 @@ body {
   }
 }
 
-
-@media only screen and (min-width:650px) and (max-width: 775px) {
-  .content-1 article {
-    max-width: 500px;
-  }
-  .content-1 .logo {
-    width: 500px;
-  }
- }
-
-
-@media only screen and (min-width:700px) and (max-width: 805px) {
-  .content-1 article {
-  }
-  .content-2 article {
-  }
-  .content-3 article {
-  }
-  .content-4 article {
-  }
-  .content-5 article {
-  }
-  .content-6 article {
-  }
-  .content-7 article {
-  }
-}
-
-
-@media (max-width: 1080px) {
-  .content-footer {
-    width: auto;
-  }
-}
-
-
-@media only screen and (min-width:700px) and (max-width: 1300px) {
-  .fadein {
-    position:relative;
-    width:100%;
-    height:650px;
-    margin: 0 auto;
-  }
-  .fadein img {
-    position:absolute;
-    width: auto;
-    margin: 0 auto;
-  }
-}
-
-
-@media (max-width: 1400px) {
-  .header-fixed {
-    padding: 0px 50px 0px 50px
-  }
-}
-
-
-
-//Form
+/*Form*/
 @media (max-width: 480px) {
   .half {
     width: 100%;
     float: none;
     margin-bottom: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 500px) {
+  .contact-text {
+    float: none;
+    padding-top: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+ }
+ .contact-text .map-h5 {
+   width: inherit;
+   float: none;
+   max-width: 800px;
+  }
+
+  .contact-text .map-h6 {
+    width: inherit;
+    float: none;
+    max-width: 800px;
+  }
+  .map {
+    width: 100%;
+    float: none;
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
+  }
+  .map .map-frame {
+    width: inherit;
+    float: none;
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 375px) and (min-width: 300px) {
+  .header-fixed {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .header-fixed .logo-img {
+    margin: 15px 10px 15px 15px;
+    height: 40px;
+  }
+  .fadein {
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 375px) {
+  .header-fixed {
+    padding: 0px 15px 0px 15px;
+    height: 60px;
+  }
+
+  .header-fixed .logo-img {
+    margin: 15px 10px 15px 15px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .header-fixed .header-menu {
+    display: none;
+    visibility: hidden;
+  }
+  .header-fixed .hamburger-menu {
+    margin: auto;
+    padding: inherit;
+    display: block;
+  }
+}
+@media only screen and (min-width: 898px){
+.header-fixed .hamburger-menu {
+    display: none;
   }
 }

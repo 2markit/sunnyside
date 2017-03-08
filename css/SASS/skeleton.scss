@@ -119,13 +119,16 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
+  text-align: left;
   color: #373D3F; }
 
 h1 {
   font-family: "Open Sans", sans-serif;
   color: #373D3F;
   font-weight: 300;
-  padding: 0px 30px 0px 30px; }
+  padding: 0px 30px 0px 30px;
+  text-align: left;}
+
 
 a {
   color: #373D3F;
@@ -133,6 +136,7 @@ a {
 
 p {
   color: #373D3F;
+  text-align: left;
   text-decoration: none; }
 
 figure {
@@ -425,191 +429,3 @@ hr {
   content: "";
   display: table;
   clear: both; }
-
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons content and style it
-there.
-*/
-
-/* For the headers to look good, be sure to reset the margin and padding of the body */
-
-body {
-  margin:0;
-  padding:0;
-}
-
-
-@media (max-width: 460px) {
-  .content-2 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-2 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-2 p {
-    padding: 0px 3px 0px 3px;
-  }
-  .content-3 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-3 h1 {
-    padding: 0px 10px 0px 10px;
-    font-size: 3rem;
-  }
-  .content-3 p {
-    padding: 0px 3px 0px 3px;
-  }
-  .content-4 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-4 h1 {
-    padding: 0px 10px 0px 10px;
-    font-size: 3rem;
-  }
-}
-
-
-@media (max-width: 487px) {
-  .content-2 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-2 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-2 p {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-3 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-3 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-3 p {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-4 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-4 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-4 p {
-    padding: 0px 10px 0px 10px;
-  }
-}
-
-
-@media (max-width:542px) {
-  .content-1 {
-    height: 400px;
-  }
-  .content-1 article {
-    max-width: 300px;
-  }
-  .content-1 .logo {
-    width: 300px;
-  }
-  .content-3 .grid-pics figure {
-    width: 100%;
-  }
- }
-
-@media (max-width:650px) {
-.grid-pics figure {
-  width: 100%;
-  display: inline-block;
-}
-}
-
-@media only screen and (min-width:542px) and (max-width:650px) {
-  .content-1 article {
-    max-width: 400px;
-  }
-  .content-1 .logo {
-    width: 400px;
-  }
- }
-
-
-@media (max-width: 700px) {
-  .fadein {
-    position:relative;
-    width:100%;
-    height:450px;
-    margin: 0 auto;
-  }
-  .fadein img {
-    position:absolute;
-    width: auto;
-    margin: 0 auto;
-  }
-  .content-footer {
-    margin-bottom: 0px;
-    padding-bottom: 10px;
-  }
-  .content-footer .wrapper .social {
-    display: inline-block;
-  }
-  .content-footer .wrapper {
-    text-align: center;
-    margin: 0px 0px 0px 0px;
-  }
-}
-
-
-@media only screen and (min-width:650px) and (max-width: 775px) {
-  .content-1 article {
-    max-width: 500px;
-  }
-  .content-1 .logo {
-    width: 500px;
-  }
- }
-
-
-@media only screen and (min-width:700px) and (max-width: 805px) {
-  .content-1 article {
-  }
-  .content-2 article {
-  }
-  .content-3 article {
-  }
-  .content-4 article {
-  }
-  .content-5 article {
-  }
-  .content-6 article {
-  }
-  .content-7 article {
-  }
-}
-@media (max-width: 1080px) {
-  .fadein {
-    position:relative;
-    width:100%;
-    height:650px;
-    margin: 0 auto;
-  }
-  .fadein img {
-    position:absolute;
-    width: auto;
-    margin: 0 auto;
-  }
-  .content-footer {
-    width: auto;
-  }
-}
-//Form
-@media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}

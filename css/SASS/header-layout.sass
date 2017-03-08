@@ -1,38 +1,50 @@
-@import normalize
-@import skeleton
-@import fonts
+*
+  font-family: 'OpenSans', sans-serif
 //  Header
 
 .header-fixed
-  background-color: rgba(128, 172, 74,.75)
-  padding: 0px 45px 0px 45px
+  background-color: rgba(128, 172, 74,.90)
+  padding: 0px 0px 0px 0px
   margin: 100px 0px 0px 0px
   position: fixed
-  height: 75px
+  height: 70px
   color: #ffffff
   box-sizing: border-box
   top: -100px
   width: 100%
-  z-index: 1
+  z-index: 5
+
 
 .logo-img
-  margin: 0px 10px 0px 0px
-  padding: 10px 10px 10px 10px
+  margin: 10px 10px 10px 10px
+  padding: 0px 0px 0px 0px
   float: left
-  height: 55px
-  line-height: 55px
+  height: 50px
+
 
 .header-fixed .title
   color:   #373D3F
   margin: 0px 0px 0px 20px
   height: 75px
-  line-height: 75px
 
 .header-fixed a
   color:  #373D3F
   height: 75px
   line-height: 75px
   text-decoration: none
+
+
+.header-fixed .title
+  color:   #373D3F
+  margin: 0px 0px 0px 20px
+  height: 75px
+
+.header-fixed a
+  color:  #373D3F
+  height: 75px
+  line-height: 75px
+  text-decoration: none
+
 
 // Logo line
 .header-fixed h3
@@ -42,12 +54,33 @@
   color: #131516
   margin: 15px 0px 15px 0px
   padding: 0px 0px 0px 0px
-  border-left: solid   #373D3F
+  border-left: solid  #373D3F
 
 
 .header-fixed h1
   float: left
-  font: normal 20px Cookie, Arial, Helvetica, sans-serif
+  font: normal 20px
+  height: 75px
+  line-height: 75px
+  margin: 20px 0px 0px 0px
+  color: #131516
+  margin: 0px 0px 0px 0px
+  padding: 0px 0px 0px 0px
+
+
+.header-fixed h3
+  float: left
+  height: 48px
+  line-height: 48px
+  color: #131516
+  margin: 15px 0px 15px 0px
+  padding: 0px 0px 0px 0px
+  border-left: solid  #373D3F
+
+
+.header-fixed h1
+  float: left
+  font: normal 20px
   height: 75px
   line-height: 75px
   margin: 20px 0px 0px 0px
@@ -58,7 +91,7 @@
 
   // The Header links
 .header-fixed  nav
-  font: 15px Arial, Helvetica, sans-serif
+  font: 15px
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
   float: right
@@ -77,7 +110,7 @@
   background-color: rgba(255,255,255,.80)
 
 .menu
-  font: 15px Arial, Helvetica, sans-serif
+  font: 15px
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
   height: 30px
@@ -135,126 +168,230 @@
   visibility: visible
 
 .sub-menu
-  width: 150px
-  height: 212px
-  padding: 5px 5px 5px 5px
+  width: 135px
+  height: 260px
+  padding: 15px 5px 5px 5px
   border-radius: 4px
   position: absolute
-  top: 50px
+  top: 47px
+  right: 15px
   visibility: hidden
-  text-align: center
+  text-align: left
   background-color: rgb(255,255,255)
   margin: 0px 0px 0px 0px
-  right: 0px
 
 .sub-menu li
   display: block
   width: 150px
-  text-align: center
+  text-align: left
 
 .sub-menu li a
-  padding: 10px 10px 10px 10px
+  padding: 10px 10px 10px  20px
   width: 150px
   line-height: 12px
   display: block
-  text-align: center
+  text-align: left
 
-.sub-menu li a:hover, .sub-menu .current-item a
-  background-color: rgba(255,255,255,.80)
-  text-align: center
 
 
 .sub-menu .home:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
   width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
   color: white
   border-radius: 4px
-  text-align: center
   transition: opacity linear 0.10s
 
 
 .sub-menu .about:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
   width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
   color: white
   border-radius: 4px
-  text-align: center
   transition: opacity linear 0.10s
 
 .sub-menu .products:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
   width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
   color: white
   border-radius: 4px
-  text-align: center
   transition: opacity linear 0.10s
 
 .sub-menu .seasonal:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
   width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
   color: white
   border-radius: 4px
-  text-align: center
   transition: opacity linear 0.10s
 
 .sub-menu .events:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
   width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
   color: white
   border-radius: 4px
-  text-align: center
-  transition: opacity linear 0.10s
-
-.sub-menu .helpful:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
-  width: 150px
-  color: white
-  border-radius: 4px
-  text-align: center
   transition: opacity linear 0.10s
 
 .sub-menu .contact:hover
-  background-color: #80AC4A
-  padding: 10px 10px 10px 10px
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
   width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
   color: white
   border-radius: 4px
-  text-align: center
   transition: opacity linear 0.10s
+
+
+.sub-menu .feedback:hover
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
+  width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
+  color: white
+  border-radius: 4px
+  transition: opacity linear 0.10s
+
+
+
+.sub-menu .newsletters:hover
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px  20px
+  width: 150px
+  line-height: 12px
+  display: block
+  text-align: left
+  color: white
+  border-radius: 4px
+  transition: opacity linear 0.10s
+
+
 
 .header-fixed nav .header-menu
   display: inline-block
-  margin: 22.5px 0px 0px 0px
-  padding: 0px 10px 5px 10px
+  margin: 15px 15px 0px 0px
+  padding: 0px 10px 0px 10px
   color:  #fff
   height: 30px
   line-height: 30px
   text-align: center
-  font-size: 16px
+  font-size: 20px
   font-weight: 600
   letter-spacing: .1rem
   text-transform: uppercase
   text-decoration: none
   white-space: nowrap
   background-color: transparent
-  border-radius: 4px
   cursor: pointer
-  box-sizing: border-box
-  border-bottom: 1px solid #fff
+  border-bottom: 3px solid #fff
+
+
+.header-fixed nav .hamburger-menu
+  margin: 15px 15px 0px 0px
+  padding: 0px 10px 0px 10px
+  height: 45px
+  width: 45px
+  background: url(../images/hamburger-menu.png) no-repeat
+  cursor: pointer
 
 
 .header-fixed nav .header-menu:hover
-  background-color: #80AC4A
+  background-color: rgba(255,255,255,.60)
   color: white
   border-radius: 4px
-  margin: 22.5px 0px 0px 0px
-  padding: 0px 10px 10px 10px
+  margin: 15px 15px 0px 0px
+  padding: 0px 10px 0px 10px
   height: 30px
   line-height: 30px
   letter-spacing: .1rem
+
+
+// Social Media
+.wrapper
+  padding: 10px 0px 10px 5px
+  margin: 0 auto
+  height: 20px
+  text-align: center
+  border-radius: 4px
+
+.facebook
+  display: inline-block
+  height: 20px
+  margin: 0px 0px 0px 0px
+  padding: 1px 1px 1px 1px
+  text-align: center
+  overflow: hidden
+  cursor: pointer
+  border-radius: 4px
+
+
+.instagram
+  display: inline-block
+  height: 20px
+  margin: 0px 0px 0px 0px
+  padding: 1px 1px 1px 1px
+  text-align: center
+  overflow: hidden
+  cursor: pointer
+  border-radius: 4px
+
+
+.pintrest
+  display: inline-block
+  height: 20px
+  margin: 0px 0px 0px 0px
+  padding: 1px 1px 1px 1px
+  text-align: center
+  overflow: hidden
+  cursor: pointer
+  border-radius: 4px
+
+//.sub-menu .facebook:hover
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px 10px
+  width: 12px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.10s
+
+
+//.sub-menu .instagram:hover
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px 10px
+  width: 20px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.10s
+
+
+//.sub-menu .pintrest:hover
+  background-color: rgba(128, 172, 74,.60)
+  padding: 10px 10px 10px 10px
+  width: 15px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.10s
