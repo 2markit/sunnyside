@@ -464,84 +464,32 @@ body {
 
 
 @media (max-width: 460px) {
-  .content-2 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-2 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-2 p {
-    padding: 0px 3px 0px 3px;
-  }
-  .content-3 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-3 h1 {
-    padding: 0px 10px 0px 10px;
-    font-size: 3rem;
-  }
-  .content-3 p {
-    padding: 0px 3px 0px 3px;
-  }
-  .content-4 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-4 h1 {
-    padding: 0px 10px 0px 10px;
-    font-size: 3rem;
-  }
+  .content-2 {}
 }
 
 
 @media (max-width: 487px) {
-  .content-2 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-2 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-2 p {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-3 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-3 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-3 p {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-4 {
-    padding: 50px 15px 50px 15px;
-  }
-  .content-4 h1 {
-    padding: 0px 10px 0px 10px;
-  }
-  .content-4 p {
-    padding: 0px 10px 0px 10px;
-  }
+  .content-2 {}
 }
 
 
-@media (max-width:542px) {
+@media  (max-width: 550px) {
   .content-1 {
   }
   .content-1 article {
   }
   .content-1 .logo {
   }
-  .content-3 .grid-pics figure {
-    width: 100%;
+  .grid-pics {
+  }
+  .grid-pics .renne-bio {
+    margin-left: -25px;
+  }
+  .grid-pics .len-bio {
+    margin-left: -25px;
   }
  }
 
-@media (max-width:650px) {
-.grid-pics figure {
-  width: 100%;
-  display: inline-block;
-}
-}
 
 @media only screen and (min-width:542px) and (max-width:650px) {
   .content-1 article {
@@ -582,42 +530,40 @@ body {
 }
 
 
-@media only screen and (max-width: 1000px) and (min-width: 500px) {
-  .contact-text {
-    float: none;
-    padding-top: 50px;
-    padding-left: auto;
-    padding-right: auto;
-    margin: auto;
-    margin-left: 50px;
-    margin-right: 50px;
- }
- .contact-text .map-h5 {
-   width: inherit;
+@media only screen and (max-width: 850px) {
+ .map-p {
    float: none;
    max-width: 800px;
-  }
-
-  .contact-text .map-h6 {
-    width: inherit;
-    float: none;
-    max-width: 800px;
+   margin: 0 auto;
   }
   .map {
-    width: 100%;
     float: none;
-    padding-left: auto;
     padding-right: auto;
-    margin: auto;
+    margin: 0 auto;
   }
   .map .map-frame {
-    width: inherit;
+    width: 95%;
     float: none;
     padding-left: auto;
     padding-right: auto;
-    margin: auto;
+    margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 300px) and (min-width: 0px) {
+  .header-fixed {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .header-fixed .logo-img {
+    margin: 15px 10px 15px 15px;
+    height: 40px;
+  }
+  .header-fixed .hamburger-menu {
+
+  }
+}
+
 
 
 @media only screen and (max-width: 375px) and (min-width: 300px) {
