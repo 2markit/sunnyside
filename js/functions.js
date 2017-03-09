@@ -7,6 +7,25 @@ $(function(){
       3000);
 });
 
+
+$(document).ready(function(){
+  $('.carousel').carousel();
+  // Next slide
+  $('.carousel').carousel('next');
+  // Move next n times.
+  $('.carousel').carousel('next', 3);
+  // Previous slide
+  $('.carousel').carousel('prev');
+  // Move prev n times.
+  $('.carousel').carousel('prev', 4);
+  // Set to nth slide
+  $('.carousel').carousel('set', 4);
+
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+});
+
+
+
 // ===== Scroll to Top ====
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
@@ -28,7 +47,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     if (target.length) {
       $('html, body').animate({
-        scrollTop: target.offset().top -75
+        scrollTop: target.offset().top -125
       }, 1000);
       return false;
     }
