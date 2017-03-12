@@ -163,15 +163,17 @@ html
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu
   visibility: visible
+  transition: opacity linear 0.10s
 
 .drop-menu:hover .sub-menu
   visibility: visible
+  transition: opacity linear 0.10s
 
 .sub-menu
   background-image: url(../images/symphony-menu.png)
   width: 135px
-  height: 270px
-  padding: 15px 5px 5px 5px
+  height: 335px
+  padding: 10px 5px 10px 5px
   border-radius: 4px
   position: absolute
   top: 46px
@@ -179,6 +181,9 @@ html
   visibility: hidden
   text-align: center
   margin: 0px 0px 0px 0px
+  -webkit-box-shadow: 3px 26px 41px 6px rgba(0,0,0,0.75)
+  -moz-box-shadow: 3px 26px 41px 6px rgba(0,0,0,0.75)
+  box-shadow: 3px 26px 41px 6px rgba(0,0,0,0.75)
 
 .sub-menu li
   display: block
@@ -192,6 +197,15 @@ html
   display: block
   text-align: center
 
+
+.sub-menu .top-banner
+  padding-left: 3px
+  padding-right: 3px
+
+.sub-menu .bottom-banner
+  margin-top: 12px
+  padding-left: 2px
+  padding-right: 2px
 
 
 .sub-menu .home:hover
@@ -339,9 +353,7 @@ html
 
 
 .header-fixed nav .hamburger-menu
-  margin:  22.5px 0px 0px 35px
-  padding: 0px 0px 0px 0px
-  right: 0
+  margin:  22.5px
   height: 25px
   width: 35px
   background: url(../images/hamburger-menu.png) no-repeat
@@ -351,7 +363,7 @@ html
 .header-fixed nav .header-menu:hover
   background-color: rgba(128, 172, 74,.60)
   border-radius: 4px
-  margin: 15px 15px 0px 0px
+  margin:  22.5px
   padding: 0px 10px 0px 10px
   height: 30px
   line-height: 30px
@@ -364,7 +376,7 @@ html
 
 // Social Media
 .wrapper
-  padding: 10px 0px 10px 5px
+  padding: 5px 0px 0px 6px
   margin: 0 auto
   height: 20px
   text-align: center
