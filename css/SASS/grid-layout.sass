@@ -1,0 +1,39 @@
+// Grid
+.grid-pics
+  margin-top: 25px
+  margin-bottom: 25px
+
+  figure
+    margin-bottom: 20px
+    position: relative
+    overflow: hidden
+    cursor: pointer
+    height: 161px
+    width: 240px
+
+    //&.is-showing
+      opacity: 1
+      transform: translateX(0px)
+
+    img
+      margin: auto
+      display: block
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
+
+    //&:hover
+      figcaption
+        left: 0%
+
+    //  img
+        transform: scale(1.1)
+
+//  figcaption
+    position: absolute
+    bottom: 10px
+    left: -100%
+    background: black
+    color: white
+    padding: 2px 8px
+    font-size: 11px
+    transition: all 0.3s ease-in-out

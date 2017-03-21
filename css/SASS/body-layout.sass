@@ -1,0 +1,468 @@
+html
+  height: 100%
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+/* Background pattern from Subtle Patterns */
+body
+  background-image: url(../images/symphony-bg.png)
+  position: relative
+  margin: 0 auto
+  min-height: 100%
+
+html,body
+  overflow-x: hidden
+
+
+body::-webkit-scrollbar
+  width: 0
+  background-color: rgba(128, 172, 74,.80)
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion
+  background-color: #eee
+  color: #444
+  cursor: pointer
+  padding: 18px
+  width: 100%
+  text-align: left
+  border: none
+  outline: none
+  transition: 0.4s
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover
+  background-color: #ddd
+
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel
+  padding: 0 18px
+  background-color: white
+  display: none
+  margin: auto
+  padding: inherit
+
+.right-text
+  float: right
+
+.center-text
+  text-align: center
+  float: none
+
+.title
+  font-weight: bold
+  text-align: left
+  text-transform: uppercase
+  color: #126a3d
+  padding: 25px
+
+.side-bar
+  display: inline-block
+  width: 200px
+  float: left
+
+  .floral-sidebar
+    width: inherit
+
+  .floral-sidebar2
+    width: inherit
+
+.side-bar-mobile
+  display: none
+  margin-top: 25px
+  margin-bottom: 0px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+.side-bar-mobile2
+  display: none
+  margin-top: -25px
+  margin-bottom: 25px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+  .grid-bar-mobile2
+    width: 60%
+
+
+.side-bar-mobile3
+  display: none
+  margin-top: 10px
+  margin-bottom: 0px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+.side-bar-mobile4
+  display: none
+  margin-top: 25px
+  margin-bottom: 25px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+  .grid-bar-mobile2
+    width: 60%
+
+.side-bar-mobile5
+  display: none
+  margin-top: 25px
+  margin-bottom: 0px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+  .grid-bar-mobile2
+    width: 60%
+
+.content-1
+  height: 375px
+  overflow: hidden
+  -webkit-box-shadow: 0px -3px 24px 1px rgba(0,0,0,1)
+  -moz-box-shadow: 0px -3px 24px 1px rgba(0,0,0,1)
+  box-shadow: 0px -3px 24px 1px rgba(0,0,0,1)
+  .fadein
+
+  .fadein img
+    margin: auto
+
+  .logo
+
+  article
+    max-width: 640px
+    margin: auto
+
+  h1
+    margin: 0 auto
+    text-transform: uppercase
+    color: #fff
+    font-size: 68px
+
+
+.content-pages
+  padding: 50px 0px 50px 25px
+  overflow-x: hidden
+
+  .columns img
+    border: 3.5px solid #126a3d
+    border-radius: 5px
+    padding: 0
+
+  .marginless
+    margin-left: -25px
+
+  .grid-pics
+    text-align: center
+    width: 100%
+    margin: auto
+    padding-left: auto
+    padding-right: auto
+    float: none
+
+  .center-image
+    text-align: center
+    margin: auto
+    padding-left: auto
+    padding-right: auto
+    float: none
+    margin-left: -25px
+
+    img
+      width: 300
+      border
+
+  .vid-pic
+    text-align: center
+    margin: 25px
+    width: 80%
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+  figcaption
+    text-align: center
+    margin: auto
+    padding: auto
+
+
+
+  .about-us
+    text-transform: uppercase
+    color: #126a3d
+
+
+  article
+    max-width: 600px
+    margin: 0 auto
+
+
+  h3
+    padding-bottom: 50px
+    margin: 0 auto
+
+  p
+    margin: 0 auto
+    padding: 0px 25px 0px 25px
+
+  ul
+    margin: 0 auto
+    text-align: left
+    padding: 0px 50px 0px 50px
+
+
+  .len-bio
+    margin: 25px
+    border-radius: 500px
+    width: 75%
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+  .renne-bio
+    margin: 25px
+    border-radius: 500px
+    width: 75%
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+.map
+  max-width: 1000px
+  width: auto
+  margin: auto
+  margin-bottom: 50px
+
+  .map-frame
+    height: 325px
+    padding-bottom: 50px
+    float: left
+    margin: auto
+    border: 0
+
+    div
+      -webkit-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+      box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+
+.content-2
+  padding: 50px 0px 0px 0px
+  overflow-x: hidden
+
+  .home-quote
+    width: 73%
+    margin-top: 50px
+
+  .home-pic
+    border-radius: 50px
+    width: 90%
+    margin-top: 50px
+    margin-bottom: 50px
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+  .lawn-pic
+    width: 40%
+
+  .center-button
+    text-align: center
+    .button
+      background-color: rgba(128, 172, 74,.75)
+      border-color: rgb(128, 172, 74)
+      line-height: normal
+
+  .columns img
+    border: 3.5px solid #126a3d
+    border-radius: 25px
+
+
+  .marginless
+    margin-left: -25px
+
+  .grid-pics
+    text-align: center
+
+  .center-image
+    text-align: center
+
+    img
+      width: 300
+
+  .center-image2
+    text-align: center
+
+    img
+      width: 300
+      border-radius: 25px
+      border: 3.5px solid #126a3d
+
+  .vid-pic
+    margin: 25px
+    border-radius: 25px
+    width: 80%
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+  figcaption
+    text-align: center
+    margin: auto
+    padding: auto
+
+
+
+  .about-us
+    text-transform: uppercase
+    color: #126a3d
+
+
+  article
+    max-width: 840px
+    margin: 0 auto
+
+
+  h3
+    padding-bottom: 50px
+    margin: 0 auto
+
+  p
+    margin: 0 auto
+    padding: 0px 25px 0px 25px
+
+  ul
+    margin: 0 auto
+    text-align: left
+    padding: 0px 50px 0px 50px
+
+
+  .len-bio
+    margin: 25px
+    border-radius: 500px
+    border: 3.5px solid #126a3d
+    width: 75%
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+  .renne-bio
+    margin: 25px
+    border-radius: 500px
+    border: 3.5px solid #126a3d
+    width: 75%
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+.map
+  max-width: 1000px
+  width: auto
+  margin: auto
+  margin-bottom: 50px
+
+  .map-frame
+    height: 325px
+    padding-bottom: 50px
+    margin: auto
+    border: 0
+
+    div
+      -webkit-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+      box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
+
+
+.contact-info
+  max-width: 1000px
+  margin: 0 auto
+  padding-top: 25px
+
+
+.map-p
+  float: right
+  max-width: 400px
+
+
+.content-3
+  padding: 50px 0px 50px 25px
+  overflow-x: hidden
+
+  article
+    max-width: 840px
+    margin: 0 auto
+
+  h3
+    padding-bottom: 50px
+    margin: 0 auto
+
+  p
+    margin: 0 auto
+    padding: 0px 25px 0px 25px
+
+.content-4
+  padding: 50px 0px 50px 25px
+  overflow-x: hidden
+
+  article
+    max-width: 940px
+    margin: auto
+
+
+  h3
+    padding-bottom: 50px
+    margin: 0 auto
+
+  p
+    margin: 0 auto
+    padding: 0px 25px 0px 25px
