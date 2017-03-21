@@ -22,14 +22,150 @@ body::-webkit-scrollbar
   width: 0
   background-color: rgba(128, 172, 74,.80)
 
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion
+  background-color: #eee
+  color: #444
+  cursor: pointer
+  padding: 18px
+  width: 100%
+  text-align: left
+  border: none
+  outline: none
+  transition: 0.4s
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover
+  background-color: #ddd
+
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel
+  padding: 0 18px
+  background-color: white
+  display: none
+  margin: auto
+  padding: inherit
+
+.right-text
+  float: right
+
+.center-text
+  text-align: center
+  float: none
 
 .title
+  font-weight: bold
   text-align: left
   text-transform: uppercase
-  color: rgb(128, 172, 74)
-  padding-bottom: 25px
-  padding-left: 25px
-  padding-top: 25px
+  color: #126a3d
+  padding: 25px
+
+.side-bar
+  display: inline-block
+  width: 200px
+  float: left
+
+  .floral-sidebar
+    width: inherit
+
+  .floral-sidebar2
+    width: inherit
+
+.side-bar-mobile
+  display: none
+  margin-top: 25px
+  margin-bottom: 0px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+.side-bar-mobile2
+  display: none
+  margin-top: -25px
+  margin-bottom: 25px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+  .grid-bar-mobile2
+    width: 60%
+
+
+.side-bar-mobile3
+  display: none
+  margin-top: 10px
+  margin-bottom: 0px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+.side-bar-mobile4
+  display: none
+  margin-top: 25px
+  margin-bottom: 25px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+  .grid-bar-mobile2
+    width: 60%
+
+.side-bar-mobile5
+  display: none
+  margin-top: 25px
+  margin-bottom: 0px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 90%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    width: 75%
+
+  .grid-bar-mobile2
+    width: 60%
 
 .content-1
   height: 375px
@@ -59,6 +195,11 @@ body::-webkit-scrollbar
   padding: 50px 0px 50px 25px
   overflow-x: hidden
 
+  .columns img
+    border: 3.5px solid #126a3d
+    border-radius: 5px
+    padding: 0
+
   .marginless
     margin-left: -25px
 
@@ -80,11 +221,11 @@ body::-webkit-scrollbar
 
     img
       width: 300
+      border
 
   .vid-pic
     text-align: center
     margin: 25px
-    border-radius: 25px
     width: 80%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -99,7 +240,7 @@ body::-webkit-scrollbar
 
   .about-us
     text-transform: uppercase
-    color: #80AC4A
+    color: #126a3d
 
 
   article
@@ -113,7 +254,6 @@ body::-webkit-scrollbar
 
   p
     margin: 0 auto
-    border-left: 5px solid #80AC4A
     padding: 0px 25px 0px 25px
 
   ul
@@ -146,8 +286,8 @@ body::-webkit-scrollbar
 
   .map-frame
     height: 325px
-    padding-right: 25px
     padding-bottom: 50px
+    float: left
     margin: auto
     border: 0
 
@@ -157,25 +297,35 @@ body::-webkit-scrollbar
       box-shadow: 0px 7px 35px -3px rgba(0,0,0,0.75)
 
 .content-2
-  padding: 50px 0px 50px 25px
+  padding: 50px 0px 0px 0px
   overflow-x: hidden
 
   .home-quote
-    width: 80%
+    width: 73%
+    margin-top: 50px
 
   .home-pic
     border-radius: 50px
-    width: 65%
+    width: 90%
+    margin-top: 50px
+    margin-bottom: 50px
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
 
+  .lawn-pic
+    width: 40%
 
+  .center-button
+    text-align: center
+    .button
+      background-color: rgba(128, 172, 74,.75)
+      border-color: rgb(128, 172, 74)
+      line-height: normal
 
-  .center-image .button
-    background-color: rgba(128, 172, 74,.75)
-    border-color: rgb(128, 172, 74)
-    line-height: normal
+  .columns img
+    border: 3.5px solid #126a3d
+    border-radius: 25px
 
 
   .marginless
@@ -186,10 +336,17 @@ body::-webkit-scrollbar
 
   .center-image
     text-align: center
-    margin-left: -25px
 
     img
       width: 300
+
+  .center-image2
+    text-align: center
+
+    img
+      width: 300
+      border-radius: 25px
+      border: 3.5px solid #126a3d
 
   .vid-pic
     margin: 25px
@@ -208,7 +365,7 @@ body::-webkit-scrollbar
 
   .about-us
     text-transform: uppercase
-    color: #80AC4A
+    color: #126a3d
 
 
   article
@@ -222,7 +379,6 @@ body::-webkit-scrollbar
 
   p
     margin: 0 auto
-    border-left: 5px solid #80AC4A
     padding: 0px 25px 0px 25px
 
   ul
@@ -234,6 +390,7 @@ body::-webkit-scrollbar
   .len-bio
     margin: 25px
     border-radius: 500px
+    border: 3.5px solid #126a3d
     width: 75%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -242,6 +399,7 @@ body::-webkit-scrollbar
   .renne-bio
     margin: 25px
     border-radius: 500px
+    border: 3.5px solid #126a3d
     width: 75%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -255,7 +413,6 @@ body::-webkit-scrollbar
 
   .map-frame
     height: 325px
-    padding-right: 25px
     padding-bottom: 50px
     margin: auto
     border: 0
@@ -283,7 +440,6 @@ body::-webkit-scrollbar
 
   article
     max-width: 840px
-    border-left: 5px solid #80AC4A
     margin: 0 auto
 
   h3

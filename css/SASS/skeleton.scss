@@ -429,3 +429,261 @@ hr {
   content: "";
   display: table;
   clear: both; }
+
+  /* Media Queries
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /*
+  Note: The best way to structure the use of media queries is to create the queries
+  near the relevant code. For example, if you wanted to change the styles for buttons
+  on small devices, paste the mobile query code up in the buttons content and style it
+  there.
+  */
+
+  /* For the headers to look good, be sure to reset the margin and padding of the body */
+
+  body {
+    margin:0;
+    padding:0;
+  }
+
+  @media (max-width: 412px) {
+    .home-quote {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .content-2 {}
+  }
+
+
+  @media (max-width: 487px) {
+    .content-2 {}
+  }
+
+
+  @media  (max-width: 550px) {
+    .content-1 {
+    }
+    .content-1 article {
+    }
+    .content-1 .logo {
+    }
+    .grid-pics {
+    }
+    .columns {
+      width: 48%;
+    }
+    .grid-pics .renne-bio {
+    }
+    .grid-pics .len-bio {
+    }
+   }
+
+  @media  (max-width: 582px) {
+    .map-frame img {
+    }
+  }
+
+  @media only screen and (min-width:542px) and (max-width:650px) {
+    .content-1 article {
+    }
+   }
+
+
+  @media (max-width: 700px) {
+    #top.content-1 {
+      height:275px;
+    }
+    .fadein {
+      height:275px;
+    }
+    .fadein img {
+      height:275px;
+    }
+    .content-footer {
+      margin-bottom: 0px;
+      padding-bottom: 10px;
+    }
+    .content-footer .wrapper .social {
+      display: inline-block;
+    }
+    .content-footer .wrapper {
+      text-align: center;
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  /*Form*/
+  @media (max-width: 480px) {
+    .half {
+      width: 100%;
+      float: none;
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .columns figcaption {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+   .map-p {
+     float: none;
+     max-width: 800px;
+     margin: 0 auto;
+     padding-right: auto;
+     padding-left: auto;
+    }
+    .map {
+      float: none;
+      padding-right: auto;
+      margin: 0 auto;
+    }
+    .map .map-frame {
+      width: 100%;
+      float: none;
+      padding-left: auto;
+      padding-right: auto;
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 300px) {
+    .header-fixed {
+      padding: 0px 10px 0px 10px;
+    }
+
+    .header-fixed .logo-img {
+      margin: 20px 10px 20px 15px;
+      height: 30px;
+    }
+    .header-fixed .hamburger-menu {
+    height: 25px;
+    width: 35px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 375px) and (min-width: 300px) {
+    .header-fixed {
+    }
+
+    .header-fixed .logo-img {
+      margin: 15px 10px 15px 15px;
+      height: 40px;
+    }
+    .fadein {
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (min-width: 375px) {
+    .header-fixed {
+      height: 60px;
+    }
+
+    .header-fixed .logo-img {
+      margin: 15px 10px 15px 15px;
+      height: 40px;
+    }
+    .header-fixed .hamburger-menu {
+      top: 43;
+      right: 42;
+    }
+  }
+  @media only screen and (max-width: 900px){
+    .header-fixed .header-menu {
+      display: none;
+      visibility: hidden;
+    }
+    .header-fixed .hamburger-menu {
+      margin: inherit;
+      padding: inherit;
+      display: block;
+    }
+    .subheader-fixed {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 898px){
+    .header-fixed .hamburger-menu {
+      display: none;
+      }
+  }
+  @media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .subheader-fixed .header-menu{
+      font-size: 12px;
+    }
+  }
+  @media only screen and (min-width: 1100px) {
+    .subheader-fixed .header-menu{
+      font-size: 16px;
+    }
+  }
+  @media only screen and(min-width: 300px) and(max-width: 500px){
+    .content-2 .side-bar {
+    }
+  }
+  @media only screen and(min-width: 500px) and(max-width: 725px){
+    .content-2 .side-bar {
+    }
+  }
+
+  @media only screen and(min-width: 725px) and(max-width: 1000px){
+    .content-2 .side-bar {
+    }
+    .content-2 .title h2 {
+    }
+    .content-2 .title h5 {
+    }
+  }
+
+
+  @media only screen and(max-width: 1090px){
+    .content-2 .title{
+      text-align: center;
+    }
+  }
+
+  @media only screen and(max-width: 1000px){
+    .content-2 .side-bar{
+      display: none;
+    }
+    .content-2 .side-bar-mobile {
+      display: inline-block;
+    }
+    .content-2 .side-bar-mobile2 {
+      display: inline-block;
+    }
+    .content-2 .side-bar-mobile3 {
+      display: inline-block;
+    }
+    .content-2 .side-bar-mobile4 {
+      display: inline-block;
+    }
+    .content-2 .side-bar-mobile5 {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: 1250px){
+    .content-2 .side-bar {
+      width: 150px;
+    }
+  }
+
+  @media only screen and (min-width: 1750px) and (max-width: 10000px){
+    .header-fixed {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .fadein {
+      width: 100%;
+      }
+    .fadein img {
+        width: 100%;
+      }
+  }
