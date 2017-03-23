@@ -578,6 +578,9 @@ hr {
     }
     .fadein {
     }
+    .content-2 .grid-pics .img-row {
+      padding-left: 8.25px;
+    }
   }
 
   @media only screen and (max-width: 600px) and (min-width: 375px) {
@@ -592,6 +595,9 @@ hr {
     .header-fixed .hamburger-menu {
       top: 43;
       right: 42;
+    }
+    .content-2 .grid-pics .img-row {
+      padding-left: 16.5px;
     }
   }
   @media only screen and (max-width: 900px){
