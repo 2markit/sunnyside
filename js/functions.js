@@ -33,6 +33,23 @@ $(document).ready(function(){
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 });
 
+
+$(document).ready(function(){
+  $('.carousel-small').carousel();
+  // Next slide
+  $('.carousel-small').carousel('next');
+  // Move next n times.
+  $('.carousel-small').carousel('next', 3);
+  // Previous slide
+  $('.carousel-small').carousel('prev');
+  // Move prev n times.
+  $('.carousel-small').carousel('prev', 4);
+  // Set to nth slide
+  $('.carousel-small').carousel('set', 4);
+
+  $('.carousel-small.carousel-slider').carousel({fullWidth: true});
+});
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
