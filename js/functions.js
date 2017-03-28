@@ -7,6 +7,9 @@ $(function(){
       3000);
 });
 
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
 
 $(document).ready(function(){
   $('.collapsible').collapsible();
