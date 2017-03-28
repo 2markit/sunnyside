@@ -601,6 +601,12 @@ hr {
       padding-left: 16.5px;
     }
   }
+  @media only screen and (max-width: 575px){
+    .subheader-fixed .header-menu{
+    }
+  }
+
+
   @media only screen and (max-width: 900px){
     .header-fixed .header-menu {
       display: none;
@@ -611,7 +617,7 @@ hr {
       padding: inherit;
       display: block;
     }
-    .subheader-fixed {
+    #products-menu {
       display: none;
     }
   }
@@ -639,12 +645,9 @@ hr {
     }
   }
 
-  @media only screen and(min-width: 725px) and(max-width: 1000px){
-    .content-2 .side-bar {
-    }
-    .content-2 .title h2 {
-    }
-    .content-2 .title h5 {
+  @media only screen and(max-width: 1200px){
+    .content-2 .center-image2 .lawn-pic {
+      width: 45%;
     }
   }
 
