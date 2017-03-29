@@ -446,6 +446,7 @@ hr {
     padding:0;
   }
 
+
   @media (max-width: 412px) {
     .home-quote {
       width: 80%;
@@ -655,12 +656,11 @@ hr {
       }
   }
 
-
-  @media only screen and(max-width: 1200px){
-    .content-2 .center-image2 .lawn-pic {
-      width: 45%;
-    }
+@media only screen and (max-width: 1000px) and (min-width: 0px){
+  .content-2 .center-image2 .lawn-pic {
+    width: 45%;
   }
+}
 
 
   @media only screen and(max-width: 1090px){
@@ -668,6 +668,7 @@ hr {
       text-align: center;
     }
   }
+
 
   @media only screen and(max-width: 1000px){
     .content-2 .side-bar{
