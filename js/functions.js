@@ -7,18 +7,41 @@ $(function(){
       3000);
 });
 
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
-});
+$(document).ready(function($) {
+  var parPosition = [];
+  $('.par').each(function() {
+    parPosition.push($(this).offset().top);
+  });
 
-$(document).ready(function(){
-  $('.collapsible').collapsible();
-});
+  $('.vNav ul li a').click(function() {
+    $('.vNav ul li a').removeClass('active');
+    $(this).addClass('active');
+  });
 
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
-});
+  $('.vNav a').hover(function() {
+    $(this).find('.label').show();
+  }, function() {
+    $(this).find('.label').hide();
+  });
 
+  $(document).scroll(function() {
+    var position = $(document).scrollTop(),
+      index;
+    for (var i = 0; i < parPosition.length; i++) {
+      if (position <= parPosition[i]) {
+        index = i;
+        break;
+      }
+    }
+    $('.vNav ul li a').removeClass('active');
+    $('.vNav ul li a:eq(' + index + ')').addClass('active');
+  });
+
+  $('.vNav ul li a').click(function() {
+    $('.vNav ul li a').removeClass('active');
+    $(this).addClass('active');
+  });
+});
 
 $(document).ready(function(){
   $('.carousel').carousel();
