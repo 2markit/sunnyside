@@ -478,7 +478,7 @@ hr {
     }
     .grid-pics .len-bio {
     }
-   }
+  }
 
   @media  (max-width: 582px) {
     .map-frame img {
@@ -488,7 +488,7 @@ hr {
   @media only screen and (min-width:542px) and (max-width:650px) {
     .content-1 article {
     }
-   }
+  }
 
 
   @media (max-width: 700px) {
@@ -512,47 +512,59 @@ hr {
       text-align: center;
       margin: 0px 0px 0px 0px;
     }
-  }
+}
 
   /*Form*/
-  @media (max-width: 480px) {
-    .half {
-      width: 100%;
-      float: none;
-      margin-bottom: 0;
-    }
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
   }
+}
 
-  @media only screen and (max-width: 600px) {
-    .columns figcaption {
+@media only screen and (max-width: 600px) {
+  .columns figcaption {
       display: none;
-    }
-    .content-2 .center-image3 .article-pic {
+  }
+  .content-2 .center-image3.article-pic {
       width: 55%;
-    }
   }
+}
 
-  @media only screen and (max-width: 850px) {
-   .map-p {
-     float: none;
-     max-width: 800px;
-     margin: 0 auto;
-     padding-right: auto;
-     padding-left: auto;
-    }
-    .map {
-      float: none;
-      padding-right: auto;
-      margin: 0 auto;
-    }
-    .map .map-frame {
-      width: 100%;
-      float: none;
-      padding-left: auto;
-      padding-right: auto;
-      margin: 0 auto;
-    }
+@media only screen and (max-width: 675px) {
+  .content-1 .subheader-fixed .drop-menu a {
+    font-size: 14px;
   }
+}
+
+@media only screen and (max-width: 975px) {
+  .content-1 .subheader-fixed .drop-menu {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .map-p {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 5px 0px 5px;
+  }
+  .map {
+    float: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .map .map-frame {
+    width: 100%;
+    text-align: center;
+    float: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
 
   @media only screen and (min-width: 0px) and (max-width: 300px) {
     .header-fixed {
@@ -608,12 +620,14 @@ hr {
     }
   }
 
+  @media only screen and (max-width: 675px){
+    .content-2 .article-pic {
+      width: 40%;
+    }
+  }
+
 
   @media only screen and (max-width: 900px){
-    .header-fixed .header-menu {
-      display: none;
-      visibility: hidden;
-    }
     .header-fixed .hamburger-menu {
       margin: inherit;
       padding: inherit;
@@ -623,29 +637,21 @@ hr {
       display: none;
     }
   }
+
+@media only screen and (max-width: 899px){
+  .header-fixed .header-menu {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
   @media only screen and (min-width: 898px){
     .header-fixed .hamburger-menu {
       display: none;
       }
   }
-  @media only screen and (min-width: 750px) and (max-width: 1000px) {
-    .subheader-fixed .header-menu{
-      font-size: 12px;
-    }
-  }
-  @media only screen and (min-width: 1100px) {
-    .subheader-fixed .header-menu{
-      font-size: 16px;
-    }
-  }
-  @media only screen and(min-width: 300px) and(max-width: 500px){
-    .content-2 .side-bar {
-    }
-  }
-  @media only screen and(min-width: 500px) and(max-width: 725px){
-    .content-2 .side-bar {
-    }
-  }
+
 
   @media only screen and(max-width: 1200px){
     .content-2 .center-image2 .lawn-pic {
