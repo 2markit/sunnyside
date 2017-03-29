@@ -542,6 +542,9 @@ hr {
   .content-1 .subheader-fixed .drop-menu {
     width: 16%;
   }
+  .content-1.subheader-fixed li#video-drop {
+    width: 12%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
