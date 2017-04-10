@@ -549,10 +549,48 @@ hr {
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (min-width: 1px) and (max-width: 320px) {
   .content-1 .subheader-fixed .drop-menu {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .content-1 .subheader-fixed .drop-menu a {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  .content-1 .subheader-fixed .drop-menu {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .content-1 .subheader-fixed .drop-menu a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 975px) {
+  .content-1 .subheader-fixed .drop-menu {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .content-1 .subheader-fixed .drop-menu:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .content-1.subheader-fixed li#video-drop {
     width: 15%;
   }
+}
+
+@media only screen and (min-width: 975px) {
+  .content-1 .subheader-fixed .drop-menu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 975px) {
   .content-1.subheader-fixed li#video-drop {
     width: 12%;
   }
@@ -829,6 +867,12 @@ hr {
       }
   }
 
+  @media only screen and (min-width: 800px) {
+      .fadein-2 {
+        display: none;
+      }
+  }
+
   @media only screen and (min-width: 1px) and (max-width: 800px) {
      #top.content-1 {
       }
@@ -944,7 +988,7 @@ hr {
       }
   }
 
-  @media only screen and (min-width: 1375px) and (max-width: 1625px) {
+  @media only screen and (min-width: 1375px) and (max-width: 1695px) {
      #top.content-1 {
         height:315px;
       }
@@ -957,7 +1001,7 @@ hr {
       }
   }
 
-  @media only screen and (min-width: 1625px) and (max-width: 1750px) {
+  @media only screen and (min-width: 1695px) and (max-width: 1750px) {
      #top.content-1 {
         height:395px;
       }
