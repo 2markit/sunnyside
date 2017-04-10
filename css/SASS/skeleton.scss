@@ -447,12 +447,30 @@ hr {
   }
 @media only screen and(min-width: 900px){
   .content-2 .home-pic2{
-    width: 65%;
+    width: 40%;
+  }
+  .content-2 .home-pic{
+    width: 60%;
+  }
+  .content-2 .len-bio{
+    width: 60%;
+  }
+  .content-2 .renne-bio{
+    width: 60%;
   }
 }
 @media only screen and(max-width: 900px){
   .content-2 .home-pic2{
-    width: 90%;
+    width: 95%;
+  }
+  .content-2 .home-pic{
+    width: 85%;
+  }
+  .content-2 .len-bio{
+    width: 75%;
+  }
+  .content-2 .renne-bio{
+    width: 75%;
   }
 }
 
@@ -467,18 +485,7 @@ hr {
   }
 
 
-  @media (max-width: 487px) {
-    .content-2 {}
-  }
-
-
   @media  (max-width: 550px) {
-    .content-1 {
-    }
-    .content-1 article {
-    }
-    .content-1 .logo {
-    }
     .grid-pics {
     }
     .columns {
@@ -495,22 +502,14 @@ hr {
     }
   }
 
-  @media only screen and (min-width:542px) and (max-width:650px) {
+  @media only screen and (min-width: 542px) and (max-width: 650px) {
     .content-1 article {
     }
   }
 
+@media only screen and (min-width: 500px) and (max-width: 700px) {}
 
   @media (max-width: 700px) {
-    #top.content-1 {
-      height:275px;
-    }
-    .fadein {
-      height:275px;
-    }
-    .fadein img {
-      height:275px;
-    }
     .content-footer {
       margin-bottom: 0px;
       padding-bottom: 10px;
@@ -550,7 +549,7 @@ hr {
 
 @media only screen and (max-width: 975px) {
   .content-1 .subheader-fixed .drop-menu {
-    width: 16%;
+    width: 20%;
   }
   .content-1.subheader-fixed li#video-drop {
     width: 12%;
@@ -604,8 +603,6 @@ hr {
       margin: 15px 10px 15px 15px;
       height: 40px;
     }
-    .fadein {
-    }
     .content-2 .grid-pics .img-row {
       padding-left: 8.25px;
     }
@@ -638,7 +635,6 @@ hr {
       width: 40%;
     }
   }
-
 
   @media only screen and (max-width: 900px){
     .header-fixed .hamburger-menu {
@@ -706,15 +702,315 @@ hr {
     }
   }
 
-  @media only screen and (min-width: 1750px) and (max-width: 10000px){
+  @media only screen and (min-width: 1px) and (max-width: 310px) {
+     #top.content-1 {
+        height: 175px;
+      }
+      .fadein-2 {
+        height: 175px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 310px) and (max-width: 350px) {
+     #top.content-1 {
+        height: 180px;
+      }
+      .fadein-2 {
+        height: 180px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 350px) and (max-width: 385px) {
+     #top.content-1 {
+        height: 205px;
+      }
+      .fadein-2 {
+        height: 205px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 385px) and (max-width: 425px) {
+     #top.content-1 {
+        height: 225px;
+      }
+      .fadein-2 {
+        height: 225px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 425px) and (max-width: 475px) {
+     #top.content-1 {
+        height: 250px;
+      }
+      .fadein-2 {
+        height: 250px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 475px) and (max-width: 525px) {
+     #top.content-1 {
+        height: 275px;
+      }
+      .fadein-2 {
+        height: 275px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 525px) and (max-width: 575px) {
+     #top.content-1 {
+        height: 305px;
+      }
+      .fadein-2 {
+        height: 305px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 575px) and (max-width: 650px) {
+     #top.content-1 {
+        height: 325px;
+      }
+      .fadein-2 {
+        height: 325px;
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 650px) and (max-width: 800px) {
+     #top.content-1 {
+        height:375px;
+      }
+      .fadein-2 {
+        display: block;
+      }
+      .fadein-2 img {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1px) and (max-width: 800px) {
+     #top.content-1 {
+      }
+      .fadein {
+        display: none;
+      }
+      .fadein img {
+        display: none;
+      }
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 855px) {
+     #top.content-1 {
+        height:185px;
+      }
+      .fadein {
+        height:185px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 855px) and (max-width: 920px) {
+     #top.content-1 {
+        height:200px;
+      }
+      .fadein {
+        height:200px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 920px) and (max-width: 985px) {
+     #top.content-1 {
+        height:215px;
+      }
+      .fadein {
+        height:215px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 985px) and (max-width: 1050px) {
+     #top.content-1 {
+        height:230px;
+      }
+      .fadein {
+        height:230px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1050px) and (max-width: 1100px) {
+     #top.content-1 {
+        height:245px;
+      }
+      .fadein {
+        height:245px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1100px) and (max-width: 1180px) {
+     #top.content-1 {
+        height:255px;
+      }
+      .fadein {
+        height:255px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1180px) and (max-width: 1245px) {
+     #top.content-1 {
+        height:275px;
+      }
+      .fadein {
+        height:275px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1245px) and (max-width: 1375px) {
+     #top.content-1 {
+        height:290px;
+      }
+      .fadein {
+        height:290px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1375px) and (max-width: 1625px) {
+     #top.content-1 {
+        height:315px;
+      }
+      .fadein {
+        height:315px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1625px) and (max-width: 1750px) {
+     #top.content-1 {
+        height:395px;
+      }
+      .fadein {
+        height:395px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+     #top.content-1 {
+        height:405px;
+      }
+      .fadein {
+        height:405px;
+        width: 100%;
+      }
+      .fadein img {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 1920px) and (max-width: 2160px){
     .header-fixed {
       padding-left: 50px;
       padding-right: 50px;
     }
+     #top.content-1 {
+      height: 415px;
+    }
     .fadein {
+      height: 415px;
       width: 100%;
       }
     .fadein img {
-        width: 100%;
+      width: 100%;
+      }
+  }
+
+  @media only screen and (min-width: 2160px) and (max-width: 10000px){
+    .header-fixed {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+     #top.content-1 {
+      height: 450px;
+    }
+    .fadein {
+      height: 405px;
+      width: 100%;
+      }
+    .fadein img {
+      width: 100%;
       }
   }

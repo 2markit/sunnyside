@@ -7,6 +7,15 @@ $(function(){
       3000);
 });
 
+$(function(){
+    $('.fadein-2 img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein-2 :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein-2');},
+      3000);
+});
+
 $(document).ready(function($) {
   var parPosition = [];
   $('.par').each(function() {
