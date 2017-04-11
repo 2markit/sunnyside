@@ -363,17 +363,19 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.content-2 .pure-table {
+  margin: 0 auto;
+}
 th,
 td {
   padding: 12px 15px;
   text-align: center;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
-td:first-child {
-  padding-left: 0; }
+td:first-child {}
 th:last-child,
-td:last-child {
-  padding-right: 0; }
+td:last-child { }
 
 
 /* Spacing
@@ -447,6 +449,19 @@ hr {
     margin:0;
     padding:0;
   }
+
+@media only screen and (max-width: 550px) {
+  .content-2 .season-pic {
+    width: 90%
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .content-2 .season-pic {
+    width: 60%;
+  }
+}
+
 @media only screen and(min-width: 900px){
   .content-2 .home-pic2{
     width: 75%;
@@ -585,8 +600,8 @@ hr {
 
 @media only screen and (min-width: 975px) {
   .content-1 .subheader-fixed .drop-menu {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
@@ -618,45 +633,24 @@ hr {
   }
 }
 
-  @media only screen and (min-width: 0px) and (max-width: 300px) {
-    .header-fixed {
-      padding: 0px 10px 0px 10px;
-    }
-
-    .header-fixed .logo-img {
-      margin: 20px 10px 20px 15px;
-      height: 30px;
-    }
+  @media only screen and (min-width: 0px) and (max-width: 319px) {
     .header-fixed .hamburger-menu {
-    height: 25px;
-    width: 35px;
+      height: 25px;
+      width: 35px;
+    }
+    .content-2 .header-fixed .logo-img {
+      height: 40px;
     }
   }
 
 
-
-  @media only screen and (max-width: 375px) and (min-width: 300px) {
-    .header-fixed {
-    }
-
-    .header-fixed .logo-img {
-      margin: 15px 10px 15px 15px;
-      height: 40px;
-    }
+  @media only screen and (max-width: 375px) and (min-width: 319px) {
     .content-2 .grid-pics .img-row {
       padding-left: 8.25px;
     }
   }
 
   @media only screen and (max-width: 600px) and (min-width: 375px) {
-    .header-fixed {
-      height: 60px;
-    }
-
-    .header-fixed .logo-img {
-      margin: 15px 10px 15px 15px;
-      height: 40px;
-    }
     .header-fixed .hamburger-menu {
       top: 43;
       right: 42;
@@ -665,6 +659,25 @@ hr {
       padding-left: 16.5px;
     }
   }
+
+  @media only screen and (max-width: 450px) and (min-width: 1px) {
+    .content-2 .header-fixed {
+      height: 60px;
+    }
+    .content-2 .header-fixed .logo-img {
+      height: 45px;
+    }
+  }
+
+  @media only screen and (min-width: 450px) {
+    .content-2 .header-fixed {
+      height: 70px;
+    }
+    .content-2 .header-fixed .logo-img {
+      height: 55px;
+    }
+  }
+
   @media only screen and (max-width: 575px){
     .subheader-fixed .header-menu{
     }
