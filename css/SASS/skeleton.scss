@@ -580,6 +580,42 @@ hr {
   }
 }
 
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+  .content-2 .vid-pic {
+  width: 250px;
+  height: 145px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .content-2 .vid-pic {
+  width: 300px;
+  height: 175px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 750px) {
+  .content-2 .vid-pic {
+  width: 375px;
+  height: 225px;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+  .content-2 .vid-pic {
+    width: 67.5%;
+    height: 317.5px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .content-2 .vid-pic {
+  width: 75%;
+  height: 357.5px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .columns figcaption {
       display: none;
