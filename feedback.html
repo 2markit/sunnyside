@@ -14,8 +14,6 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 <!--Import Google Icon Font-->
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--Import materialize.css-->
-<link type="text/css" rel="stylesheet" href="css/sass/materialize.css"  media="screen,projection">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -62,9 +60,6 @@
         </div>
   </section>
   <section class="content-2">
-  <div class="side-bar">
-    <img class="floral-sidebar" src="images/floral-sidebar.png" />
-  </div>
     <article>
         <h2 class="title">Feedback</h2>
       </article>
@@ -86,8 +81,35 @@
         <a class="carousel-item" href="#five!"><img src="images/feedback-1.jpg"></a>
       </div>
         <div class="center-button">
-          <a href="https://www.yelp.ca/writeareview/biz/1EIpi3a9mxE152XcLruu_w?return_url=%2Fbiz%2F1EIpi3a9mxE152XcLruu_w"><input type="submit" value="Submit Feedback" class="button button-pill button-primary"></a>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn">Submit Feedback</button>
         </div>
+  </article>
+</section>
+<section>
+  <article>
+<!-- The Modal -->
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="feedback-h">Let us know how we’re doing!</h4>
+    </div>
+    <div class="modal-body">
+      <p class="feedback-p">Your feedback helps us improve your experience by identifying our weaknesses and fostering our strengths. Whether you had a great experience or felt we needed improvement, we’d love to hear from you!</p>
+      <p class="feedback-p">Leave us an email below with any feedback you may have.</p>
+      <form action="mailto:jakemckenzie19@gmail.com">
+  		<label for="fname">First Name</label>
+  		<input type="text" id="fname" name="fname">
+  		<label for="lname">Last Name</label>
+  		<input type="text" id="lname" name="lname">
+  		<label for="comment">Comment</label>
+  		<input type="text" id="comment" name="comment">
+	  </form>
+    <span class="close">&times;</span>
+    <button class="center" type="submit">Submit</button>
+  </div>
+  </div>
   </article>
   </section>
   <section class="content-footer">
