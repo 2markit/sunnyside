@@ -29,7 +29,7 @@ button.accordion
   cursor: pointer
   padding: 18px
   width: 100%
-  text-align: left
+  text-align: center
   border: none
   outline: none
   transition: 0.4s
@@ -38,7 +38,6 @@ button.accordion
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover
   background-color: #ddd
-
 
 /* Style the accordion panel. Note: hidden by default */
 div.panel
@@ -54,16 +53,60 @@ div.panel
 .center-text
   text-align: center
   float: none
+  padding: 0px 25px 0px 25px
+
+.verticalLine
+  text-align: center
+  padding: 0
+  margin: 0 auto
+  top: 15px
+  border-left: thin solid #127D2A
+  height: 35px
 
 .title
+  font-family: "GearedSlab-Bold"
   font-weight: bold
-  text-align: left
+  text-align: center
   text-transform: uppercase
-  color: #126a3d
+  color: #127D2A
+  text-shadow: 2.5px 2.5px 1px #FFFFFF
   padding: 25px
+  padding-top: 0px
+  padding-bottom: 10px
+  margin: 0
+
+.subtitle
+  font-family: "GearedSlab-Bold"
+  font-weight: bold
+  text-align: center
+  text-transform: uppercase
+  color: #127D2A
+  text-decoration: underline
+  text-shadow: 2.5px 2.5px 1px #FFFFFF
+  padding: 25px
+  padding-top: 10px
+  padding-bottom: 10px
+  margin: 0
+
+.visit
+  text-align: center
+  font-family: "Arial Black"
+  text-decoration: underline
+  text-transform: uppercase
+  color: #373D3F
+  font-weight: bold
+
+.center-button
+  text-align: center
+
+button
+  background-color: rgba(18,125,42,.90)
+  border-color: rgb(128, 172, 74)
+  line-height: normal
+  color: #fff
 
 .side-bar
-  display: inline-block
+  display: none
   width: 200px
   float: left
 
@@ -74,13 +117,13 @@ div.panel
     width: inherit
 
 .side-bar-mobile
-  display: none
+  display: inline-block
   margin-top: 25px
   margin-bottom: 0px
   text-align: center
 
   .floral-sidebar-mobile
-    width: 90%
+    width: 70%
 
   .floral-sidebar-mobile2
     width: 50%
@@ -89,16 +132,21 @@ div.panel
     width: 35%
 
   .grid-bar-mobile
-    width: 75%
+    display: none
+    width: 45%
+
+  .grid-bar-mobile2
+    display: none
+    width: 35%
 
 .side-bar-mobile2
-  display: none
+  display: inline-block
   margin-top: -25px
   margin-bottom: 25px
   text-align: center
 
   .floral-sidebar-mobile
-    width: 90%
+    width: 70%
 
   .floral-sidebar-mobile2
     width: 50%
@@ -107,32 +155,22 @@ div.panel
     width: 35%
 
   .grid-bar-mobile
-    width: 75%
+    width: 45%
+    display: none
 
   .grid-bar-mobile2
-    width: 60%
+    display: none
+    width: 35%
 
 
 .side-bar-mobile3
-  display: none
+  display: inline-block
   margin-top: 10px
   margin-bottom: 0px
   text-align: center
 
   .floral-sidebar-mobile
-    width: 90%
-
-  .floral-sidebar-mobile2
-    width: 50%
-
-.side-bar-mobile4
-  display: none
-  margin-top: 25px
-  margin-bottom: 25px
-  text-align: center
-
-  .floral-sidebar-mobile
-    width: 90%
+    width: 70%
 
   .floral-sidebar-mobile2
     width: 50%
@@ -141,19 +179,44 @@ div.panel
     width: 35%
 
   .grid-bar-mobile
-    width: 75%
+    display: none
+    width: 45%
 
   .grid-bar-mobile2
-    width: 60%
+    display: none
+    width: 35%
+
+.side-bar-mobile4
+  display: inline-block
+  margin-top: 25px
+  margin-bottom: 50px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 70%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 30%
+
+  .grid-bar-mobile
+    display: none
+    width: 45%
+
+  .grid-bar-mobile2
+    display: none
+    width: 35%
 
 .side-bar-mobile5
-  display: none
+  display: inline-block
   margin-top: 25px
   margin-bottom: 0px
   text-align: center
 
   .floral-sidebar-mobile
-    width: 90%
+    width: 70%
 
   .floral-sidebar-mobile2
     width: 50%
@@ -162,23 +225,69 @@ div.panel
     width: 35%
 
   .grid-bar-mobile
-    width: 75%
+    display: none
+    width: 45%
 
   .grid-bar-mobile2
-    width: 60%
+    display: none
+    width: 35%
+
+.side-bar-mobile6
+  display: inline-block
+  margin-top: 5px
+  margin-bottom: 15px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 70%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    display: none
+    width: 45%
+
+  .grid-bar-mobile2
+    display: none
+    width: 35%
+
+.side-bar-mobile7
+  display: inline-block
+  margin-top: 0px
+  margin-bottom: 15px
+  text-align: center
+
+  .floral-sidebar-mobile
+    width: 70%
+
+  .floral-sidebar-mobile2
+    width: 50%
+
+  .floral-sidebar-mobile3
+    width: 35%
+
+  .grid-bar-mobile
+    display: none
+    width: 45%
+
+  .grid-bar-mobile2
+    display: none
+    width: 35%
 
 .content-1
-  height: 375px
   overflow: hidden
   -webkit-box-shadow: 0px -3px 24px 1px rgba(0,0,0,1)
   -moz-box-shadow: 0px -3px 24px 1px rgba(0,0,0,1)
   box-shadow: 0px -3px 24px 1px rgba(0,0,0,1)
-  .fadein
-
   .fadein img
     margin: auto
 
-  .logo
+  .fadein-2 img
+    margin: auto
 
   article
     max-width: 640px
@@ -219,14 +328,10 @@ div.panel
     float: none
     margin-left: -25px
 
-    img
-      width: 300
-      border
 
   .vid-pic
     text-align: center
     margin: 25px
-    width: 80%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -249,21 +354,22 @@ div.panel
 
 
   h3
-    padding-bottom: 50px
     margin: 0 auto
 
   p
     margin: 0 auto
-    padding: 0px 25px 0px 25px
+    padding: 0px 5px 0px 5px
 
   ul
     margin: 0 auto
-    text-align: left
+    text-align: center
     padding: 0px 50px 0px 50px
 
 
   .len-bio
     margin: 25px
+    margin-top: 0px
+    margin-bottom: 0px
     border-radius: 500px
     width: 75%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -300,32 +406,51 @@ div.panel
   padding: 50px 0px 0px 0px
   overflow-x: hidden
 
+  .legend
+    border-radius: 12.5px
+
   .home-quote
-    width: 73%
-    margin-top: 50px
+    margin-top: 25px
+
+  .sub-home-quote
+    margin-top: 10px
 
   .home-pic
     border-radius: 50px
-    width: 90%
-    margin-top: 50px
-    margin-bottom: 50px
+    margin-top: 15px
+    margin-bottom: 15px
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    border-radius: 25px
+    border: 3.5px solid #126a3d
+
+  .home-pic2
+    border-radius: 50px
+    margin-top: 15px
+    margin-bottom: 15px
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    border: 3.5px solid #126a3d
+
+  .home-pic3
+    border-radius: 50px
+    margin-top: 15px
+    margin-bottom: 15px
+
+  .season-pic
+    border-radius: 50px
+    margin-top: 25px
+    margin-bottom: 5px
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
 
-  .lawn-pic
-    width: 40%
-
-  .center-button
-    text-align: center
-    .button
-      background-color: rgba(128, 172, 74,.75)
-      border-color: rgb(128, 172, 74)
-      line-height: normal
 
   .columns img
     border: 3.5px solid #126a3d
-    border-radius: 25px
+    border-radius: 75px
 
 
   .marginless
@@ -337,21 +462,38 @@ div.panel
   .center-image
     text-align: center
 
-    img
-      width: 300
+  .right-image
+    text-align: right
 
   .center-image2
     text-align: center
 
-    img
-      width: 300
+    .lawn-pic
+      width: 30%
       border-radius: 25px
       border: 3.5px solid #126a3d
 
+  .center-image3
+    text-align: center
+
+    .article-pic
+      width: 30%
+      margin-bottom: 15px
+      border-radius: 25px
+      border: 3.5px solid #126a3d
+      -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+      box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
+  .gif-pic
+    max-width: 480px
+    max-height: 267px
+    -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
+
   .vid-pic
     margin: 25px
-    border-radius: 25px
-    width: 80%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -374,16 +516,15 @@ div.panel
 
 
   h3
-    padding-bottom: 50px
     margin: 0 auto
 
   p
     margin: 0 auto
-    padding: 0px 25px 0px 25px
+    padding: 0px 5px 0px 5px
 
   ul
     margin: 0 auto
-    text-align: left
+    text-align: center
     padding: 0px 50px 0px 50px
 
 
@@ -391,7 +532,6 @@ div.panel
     margin: 25px
     border-radius: 500px
     border: 3.5px solid #126a3d
-    width: 75%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
@@ -400,20 +540,20 @@ div.panel
     margin: 25px
     border-radius: 500px
     border: 3.5px solid #126a3d
-    width: 75%
     -webkit-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     -moz-box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
     box-shadow: 0px 13px 20px -5px rgba(0,0,0,0.75)
 
 .map
-  max-width: 1000px
   width: auto
   margin: auto
   margin-bottom: 50px
 
   .map-frame
     height: 325px
-    padding-bottom: 50px
+    padding-left: 25px
+    padding-right: 25px
+    padding-bottom: 25px
     margin: auto
     border: 0
 
@@ -424,14 +564,12 @@ div.panel
 
 
 .contact-info
-  max-width: 1000px
   margin: 0 auto
   padding-top: 25px
 
 
 .map-p
-  float: right
-  max-width: 400px
+  padding-top: 15px
 
 
 .content-3
@@ -443,12 +581,11 @@ div.panel
     margin: 0 auto
 
   h3
-    padding-bottom: 50px
     margin: 0 auto
 
   p
     margin: 0 auto
-    padding: 0px 25px 0px 25px
+    padding: 0px 25px 0px 30px
 
 .content-4
   padding: 50px 0px 50px 25px
@@ -460,9 +597,8 @@ div.panel
 
 
   h3
-    padding-bottom: 50px
     margin: 0 auto
 
   p
     margin: 0 auto
-    padding: 0px 25px 0px 25px
+    padding: 0px 25px 0px 30px

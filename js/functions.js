@@ -7,15 +7,50 @@ $(function(){
       3000);
 });
 
-
-$(document).ready(function(){
-  $('.collapsible').collapsible();
+$(function(){
+    $('.fadein-2 img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein-2 :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein-2');},
+      3000);
 });
 
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
-});
+$(document).ready(function($) {
+  var parPosition = [];
+  $('.par').each(function() {
+    parPosition.push($(this).offset().top);
+  });
 
+  $('.vNav ul li a').click(function() {
+    $('.vNav ul li a').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.vNav a').hover(function() {
+    $(this).find('.label').show();
+  }, function() {
+    $(this).find('.label').hide();
+  });
+
+  $(document).scroll(function() {
+    var position = $(document).scrollTop(),
+      index;
+    for (var i = 0; i < parPosition.length; i++) {
+      if (position <= parPosition[i]) {
+        index = i;
+        break;
+      }
+    }
+    $('.vNav ul li a').removeClass('active');
+    $('.vNav ul li a:eq(' + index + ')').addClass('active');
+  });
+
+  $('.vNav ul li a').click(function() {
+    $('.vNav ul li a').removeClass('active');
+    $(this).addClass('active');
+  });
+});
 
 $(document).ready(function(){
   $('.carousel').carousel();
@@ -31,6 +66,23 @@ $(document).ready(function(){
   $('.carousel').carousel('set', 4);
 
   $('.carousel.carousel-slider').carousel({fullWidth: true});
+});
+
+
+$(document).ready(function(){
+  $('.carousel-small').carousel();
+  // Next slide
+  $('.carousel-small').carousel('next');
+  // Move next n times.
+  $('.carousel-small').carousel('next', 3);
+  // Previous slide
+  $('.carousel-small').carousel('prev');
+  // Move prev n times.
+  $('.carousel-small').carousel('prev', 4);
+  // Set to nth slide
+  $('.carousel-small').carousel('set', 4);
+
+  $('.carousel-small.carousel-slider').carousel({fullWidth: true});
 });
 
 var acc = document.getElementsByClassName("accordion");
@@ -73,9 +125,36 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     if (target.length) {
       $('html, body').animate({
-        scrollTop: target.offset().top -125
+        scrollTop: target.offset().top -90
       }, 1000);
       return false;
     }
   }
 });
+
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

@@ -5,10 +5,9 @@ html
 
 //Header
 .header-fixed
-  background-color: rgba(18,106,61,.90)
+  background-color: rgba(18,125,42,.90)
   margin: 100px 0px 0px 0px
   position: fixed
-  height: 70px
   color: #ffffff
   box-sizing: border-box
   top: -100px
@@ -17,30 +16,25 @@ html
 
 
 .logo-img
-  margin: 10px 10px 10px 10px
+  margin: 7.5px 0px 7.5px 20px
   padding: 0px 0px 0px 0px
   float: left
-  height: 50px
+  height: 55px
 
+.phone-logo
+  margin: 17.5px 35px 0px 0px
+  padding: 0px 0px 0px 0px
+  height: 35px
+  float: right
 
 .header-fixed .title
+  font-family: "open sans" sans-serif
   color:   #373D3F
   margin: 0px 0px 0px 20px
   height: 75px
 
 .header-fixed a
-  color:  #373D3F
-  height: 75px
-  line-height: 75px
-  text-decoration: none
-
-
-.header-fixed .title
-  color:   #373D3F
-  margin: 0px 0px 0px 20px
-  height: 75px
-
-.header-fixed a
+  font-family: "open sans" sans-serif
   color:  #373D3F
   height: 75px
   line-height: 75px
@@ -59,6 +53,7 @@ html
 
 
 .header-fixed h1
+  font-family: "open sans" sans-serif
   float: left
   font: normal 20px
   height: 75px
@@ -70,6 +65,7 @@ html
 
 
 .header-fixed h3
+  font-family: "open sans" sans-serif
   text-align: center
   height: 48px
   line-height: 48px
@@ -79,23 +75,14 @@ html
   border-left: solid  #373D3F
 
 
-.header-fixed h1
-  text-align: center
-  font: normal 20px
-  height: 75px
-  line-height: 75px
-  margin: 20px 0px 0px 0px
-  color: #131516
-  margin: 0px 0px 0px 0px
-  padding: 0px 0px 0px 0px
-
-
   // The Header links
 .header-fixed  nav
+  font-family: "open sans" sans-serif
   font: 15px
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
   float: right
+  max-width: 125px
 
 .clearfix:after
   display: block
@@ -105,6 +92,8 @@ html
   display: block
   clear: both
 
+.clearfix
+  height: 70px
 /*----- Menu Outline -----*/
 .menu-wrap
   width: 100%
@@ -119,12 +108,14 @@ html
   float: left
 
 .menu li
+  font-family: "open sans" sans-serif
   margin: 0px 0px 0px 0px
   height: 30px
   line-height: 30px
   list-style: none
 
 .menu a
+  font-family: "open sans" sans-serif
   transition: all linear 0.15s
   margin: 0px 0px 0px 0px
   padding: 0px 10px 5px 10px
@@ -132,7 +123,7 @@ html
   height: 30px
   line-height: 30px
   text-align: center
-  font-size: 12px
+  font-size: 15px
   font-weight: 600
   letter-spacing: .1rem
   text-transform: uppercase
@@ -152,13 +143,14 @@ html
 /*----- Top Level -----*/
 .menu > ul > li
   display: inline-block
+  height: inherit
 
 .menu > ul > li > a
   padding: 10px 40px
   display: inline-block
 
 .menu > ul > li:hover > a, .menu > ul > .current-item > a
-  background-color: rgba(128, 172, 74,.75)
+  background-color: rgba(18,125,42,.60)
 
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu
@@ -169,14 +161,14 @@ html
 
 .sub-menu
   background-image: url(../images/symphony-menu.png)
-  width: 135px
-  height: 335px
-  padding: 10px 0px 10px 2.5px
+  width: 145px
+  height: 360px
+  padding: 10px 2.5px 10px 2.5px
   border: 2.5px solid #373D3F
   border-radius: 4px
-  position: absolute
-  top: 46px
-  right: 15px
+  position: fixed
+  top: 61px
+  right: 5px
   visibility: hidden
   text-align: center
   margin: 0px 0px 0px 0px
@@ -185,13 +177,15 @@ html
   box-shadow: -1px 26px 23px 9px rgba(0,0,0,0.75)
 
 .sub-menu li
+  font-family: "open sans" sans-serif
   display: block
   width: 125px
   text-align: center
 
 .sub-menu li a
+  font-family: "open sans" sans-serif
   padding: 10px 10px 10px  10px
-  width: 125px
+  width: 135px
   line-height: 12px
   display: block
   text-align: center
@@ -207,140 +201,28 @@ html
   padding-right: 2px
 
 
-.sub-menu .home:hover
-  background-color: rgba(18,106,61,.60)
+.sub-menu li a:hover
+  background-color: rgba(18,125,42,.60)
   padding: 10px 10px 10px  10px
-  width: 125px
+  width: 135px
   line-height: 12px
   display: block
   text-align: center
   color: white
   border-radius: 4px
-  transition: opacity linear 0.10s
   -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
   -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
   box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-.sub-menu .about:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-.sub-menu .products:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-.sub-menu .seasonal:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-.sub-menu .events:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-.sub-menu .contact:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-
-.sub-menu .feedback:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-
-
-.sub-menu .newsletters:hover
-  background-color: rgba(18,106,61,.60)
-  padding: 10px 10px 10px  10px
-  width: 125px
-  line-height: 12px
-  display: block
-  text-align: center
-  color: white
-  border-radius: 4px
-  transition: opacity linear 0.10s
-  -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-  box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
-
-
-
 
 .header-fixed nav .header-menu
   display: inline-block
-  margin:  20px
-  padding: 0px 10px 0px 10px
+  margin:  20px 22.5px 20px 0px
+  padding: 0px 0px 0px 0px
   color:  #fff
   height: 30px
   line-height: 30px
   text-align: center
-  font-size: 20px
+  font-size: 24px
   font-weight: 600
   letter-spacing: .1rem
   text-transform: uppercase
@@ -352,22 +234,21 @@ html
 
 
 .header-fixed nav .hamburger-menu
-  margin:  22.5px
-  height: 25px
-  width: 35px
-  background: url(../images/hamburger-menu.png) no-repeat
+  margin-bottom: 12.5px
+  margin-left: 0px
+  float: right
+  height: 45px
   cursor: pointer
 
 
 .header-fixed nav .header-menu:hover
-  background-color: rgba(18,106,61,.60)
+  background-color: rgba(18,125,42,.60)
   border-radius: 4px
-  margin:  20px
-  padding: 0px 10px 0px 10px
+  margin:  20px 22.5px 20px 0px
+  padding: 0px 0px 0px 0px
   height: 30px
   line-height: 30px
   letter-spacing: .1rem
-  transition: opacity linear 0.10s
   -webkit-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
   -moz-box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
   box-shadow: 4px -4px 17px -7px rgba(0,0,0,0.75)
@@ -375,7 +256,7 @@ html
 
 // Social Media
 .wrapper
-  padding: 5px 0px 0px 6px
+  padding: 2.5px 0px 0px 2.5px
   margin: 0 auto
   height: 20px
   text-align: center
@@ -383,9 +264,9 @@ html
 
 .facebook
   display: inline-block
-  height: 20px
+  height: 25px
   margin: 0px 0px 0px 0px
-  padding: 1px 1px 1px 1px
+  padding: 3px 3px 3px 3px
   text-align: center
   overflow: hidden
   cursor: pointer
@@ -394,9 +275,9 @@ html
 
 .instagram
   display: inline-block
-  height: 20px
+  height: 25px
   margin: 0px 0px 0px 0px
-  padding: 1px 1px 1px 1px
+  padding: 3px 3px 3px 3px
   text-align: center
   overflow: hidden
   cursor: pointer
@@ -405,9 +286,36 @@ html
 
 .pintrest
   display: inline-block
-  height: 20px
+  height: 25px
   margin: 0px 0px 0px 0px
-  padding: 1px 1px 1px 1px
+  padding: 3px 3px 3px 3px
+  text-align: center
+  overflow: hidden
+  cursor: pointer
+  border-radius: 4px
+
+.facebook:hover
+  display: inline-block
+  background-color: rgba(18,125,42,.60)
+  padding: 3px 3px 3px 3px
+  text-align: center
+  overflow: hidden
+  cursor: pointer
+  border-radius: 4px
+
+.instagram:hover
+  display: inline-block
+  background-color: rgba(18,125,42,.60)
+  padding: 3px 3px 3px 3px
+  text-align: center
+  overflow: hidden
+  cursor: pointer
+  border-radius: 4px
+
+.pintrest:hover
+  display: inline-block
+  background-color: rgba(18,125,42,.60)
+  padding: 3px 3px 3px 3px
   text-align: center
   overflow: hidden
   cursor: pointer
