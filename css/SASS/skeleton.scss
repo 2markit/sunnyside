@@ -522,27 +522,27 @@ hr {
   }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .sub-home-quote {
-    width: 90%;
+    width: 85%;
   }
   .home-quote {
-    width: 95%;
+    width: 100%;
   }
   .jjoubart {
-    width: 38%;
+    width: 30%;
   }
 }
 
-@media (min-width: 412px) {
+@media (min-width: 450px) {
   .sub-home-quote {
-    width: 55%;
+    width: 50%;
   }
   .home-quote {
     width: 75%;
   }
   .jjoubart {
-    width: 25%;
+    width: 20%;
   }
 }
 
