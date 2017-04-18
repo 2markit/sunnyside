@@ -199,9 +199,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #fff; }
 a:hover {
-  color: #0FA0CE; }
+  color: #fff; }
 
 
 /* Buttons
@@ -522,11 +522,29 @@ hr {
   }
 }
 
-  @media (max-width: 412px) {
-    .home-quote {
-      width: 80%;
-    }
+@media (max-width: 412px) {
+  .sub-home-quote {
+    width: 90%;
   }
+  .home-quote {
+    width: 95%;
+  }
+  .jjoubart {
+    width: 38%;
+  }
+}
+
+@media (min-width: 412px) {
+  .sub-home-quote {
+    width: 55%;
+  }
+  .home-quote {
+    width: 75%;
+  }
+  .jjoubart {
+    width: 25%;
+  }
+}
 
   @media (max-width: 460px) {
     .content-2 {}
