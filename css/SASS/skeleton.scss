@@ -768,20 +768,61 @@ hr {
     }
   }
 
-  @media only screen and (max-width: 675px){
-    .content-2 .article-pic {
-      width: 40%;
-    }
+@media only screen and (max-width: 675px){
+  .content-2 .article-pic {
+    width: 40%;
   }
+}
+
+@media only screen and (max-width: 400px){
+  .content-1 {
+    margin-top: 53px;
+  }
+  .header-fixed .phone-logo {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .header-fixed .logo-img {
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .header-fixed .hamburger-menu {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 400px){
+  .header-fixed .hamburger-menu {
+    margin-top: 12.5px;
+    margin-right: 22.5px;
+  }
+  .content-1 {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 900px) {
+  .header-fixed .phone-logo {
+    margin-right: 35px;
+  }
+}
 
   @media only screen and (max-width: 900px){
     .header-fixed .hamburger-menu {
-      margin: inherit;
       padding: inherit;
       display: block;
     }
     #products-menu {
       display: none;
+    }
+    .header-fixed .clearfix {
+      width: 60px;
+    }
+    .header-fixed .drop-menu {
+      width: 60px;
     }
   }
 

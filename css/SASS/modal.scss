@@ -86,6 +86,28 @@ input {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
+
+.header-fixed .sub-menu {
+  -webkit-animation-name: slideUp;
+  -webkit-animation-duration: 0.2s;
+  animation-name: slideUp;
+  animation-duration: 0.2s
+}
+
+.header-fixed menu li:hover .sub-menu {
+  -webkit-animation-name: slideOut;
+  -webkit-animation-duration: 0.3s;
+  animation-name: slideOut;
+  animation-duration: 0.3s
+}
+
+.header-fixed .drop-menu:hover .sub-menu {
+  -webkit-animation-name: slideOut;
+  -webkit-animation-duration: 0.3s;
+  animation-name: slideOut;
+  animation-duration: 0.3s
+}
+
 /* Add Animation */
 @-webkit-keyframes slideIn {
     from {bottom: -300px; opacity: 0}
@@ -96,7 +118,25 @@ input {
     from {bottom: -300px; opacity: 0}
     to {bottom: 0; opacity: 1}
 }
+@-webkit-keyframes slideOut {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
 
+@keyframes slideOut {
+    from {top: -300px; opacity: 0}
+    to {top: 49; opacity: 1}
+}
+
+@-webkit-keyframes slideUp {
+    from {top: 49px; opacity: 1}
+    to {top: -300px; opacity: 0}
+}
+
+@keyframes slideUp {
+    from {top: 49px; opacity: 1}
+    to {top: -300px; opacity: 0}
+}
 @-webkit-keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
