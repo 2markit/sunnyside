@@ -144,8 +144,6 @@ dfn {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /**
@@ -1505,4 +1503,9 @@ striping:
 }
 .pure-table-horizontal tbody > tr:last-child > td {
     border-bottom-width: 0;
+}
+.pure-table td .services-logo {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }

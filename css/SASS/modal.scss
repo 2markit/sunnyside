@@ -76,6 +76,7 @@
     color: white;
 }
 input {
+  min-width: 75%;
 }
 .modal-content form {
   padding-bottom: 10px;
@@ -88,10 +89,14 @@ input {
 }
 
 .header-fixed .sub-menu {
-  -webkit-animation-name: slideUp;
+  -webkit-animation-name: fadeOut;
   -webkit-animation-duration: 0.2s;
+  animation-name: fadeOut;
+  animation-duration: 0.2s;
+  -webkit-animation-name: slideUp;
+  -webkit-animation-duration: 0.4s;
   animation-name: slideUp;
-  animation-duration: 0.2s
+  animation-duration: 0.4s
 }
 
 .header-fixed menu li:hover .sub-menu {
@@ -119,24 +124,35 @@ input {
     to {bottom: 0; opacity: 1}
 }
 @-webkit-keyframes slideOut {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {right: -300px; opacity: 0}
+    to {right: 5; opacity: 1}
 }
 
 @keyframes slideOut {
-    from {top: -300px; opacity: 0}
-    to {top: 49; opacity: 1}
+    from {right: -300px; opacity: 0}
+    to {right: 5; opacity: 1}
 }
 
 @-webkit-keyframes slideUp {
-    from {top: 49px; opacity: 1}
-    to {top: -300px; opacity: 0}
+    from {width: 145px; height: 360px; right: 5px; opacity: 1}
+    to {width: 45px; height: 60px; right: -300px; opacity: 0}
 }
 
 @keyframes slideUp {
-    from {top: 49px; opacity: 1}
-    to {top: -300px; opacity: 0}
+    from {width: 145px; height: 360px; right: 5px; opacity: 1}
+    to {width: 45px; height: 60px; right: -300px; opacity: 0}
 }
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
 @-webkit-keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
