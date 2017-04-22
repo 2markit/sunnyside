@@ -113,6 +113,15 @@ html
   letter-spacing: .15rem
   float: left
 
+.menu-p
+  font-family: "GearedSlab-Bold"
+  font-weight: bold
+  margin: 0px 0px 0px 0px
+  height: 30px
+  line-height: 30px
+  letter-spacing: .15rem
+  list-style: none
+
 .menu li
   font-family: "GearedSlab-Bold"
   font-weight: bold
@@ -163,10 +172,10 @@ html
 
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu
-  visibility: visible
+  display: block
 
 .drop-menu:hover .sub-menu
-  visibility: visible
+  display: block
 
 .sub-menu
   background-image: url(../images/symphony-menu.png)
@@ -178,7 +187,7 @@ html
   position: fixed
   top: 61px
   right: 5px
-  visibility: hidden
+  display: none
   text-align: center
   margin: 0px 0px 0px 0px
   -webkit-box-shadow: -1px 26px 23px 9px rgba(0,0,0,0.75)
@@ -251,6 +260,11 @@ html
   height: 45px
   cursor: pointer
 
+.header-fixed nav .hamburger
+  margin-bottom: 12.5px
+  margin-left: 0px
+  height: 45px
+  cursor: pointer
 
 .header-fixed nav .header-menu:hover
   background-color: rgba(18,125,42,.60)
