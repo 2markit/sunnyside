@@ -16,6 +16,20 @@ $(function(){
       3000);
 });
 
+$(document).ready(function(){
+    // Show hide popover
+    $(".drop-menu").click(function(){
+        $(this).find(".sub-menu").slideToggle("fast");
+    });
+});
+
+$(document).on("click", function(event){
+    var $trigger = $(".drop-menu");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $(".sub-menu").slideUp("fast");
+    }
+});
+
 $(document).ready(function($) {
   var parPosition = [];
   $('.par').each(function() {
