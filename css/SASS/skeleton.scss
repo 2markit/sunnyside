@@ -207,8 +207,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: inherit;; }
-a:hover {
-  color: #fff; }
+a:hover { }
 
 
 /* Buttons
@@ -465,7 +464,7 @@ hr {
 
 @media only screen and (max-width: 400px) {
   .content-1 .header-fixed .sub-menu{
-    top: 52px;
+
   }
 }
 
@@ -522,6 +521,13 @@ hr {
   .content-2 .renne-bio{
     width: 60%;
   }
+  .content-2 .landscapers-pic{
+    width: 40%;
+    float: left
+  }
+  .content-2 .landscapers-name{
+    padding-top: 30px
+  }
 }
 @media only screen and(max-width: 900px){
   .content-2 .home-pic3{
@@ -538,6 +544,43 @@ hr {
   }
   .content-2 .renne-bio{
     width: 75%;
+  }
+  .content-2 .landscapers-pic{
+    width: 50%;
+    float: left
+  }
+  .content-2 .landscapers-name{
+    padding-top: 30px
+  }
+}
+
+@media only screen and(min-width: 650px) and (max-width: 750px){
+  .content-2 .landscapers-pic{
+    width: 40%;
+    float: left
+  }
+  .content-2 .landscapers-name{
+    padding-top: 10px;
+  }
+}
+
+@media only screen and(max-width: 650px){
+  .content-2 .landscapers-pic{
+    width: 50%;
+    float: none;
+  }
+  .content-2 .landscapers-name{
+    padding-top: 10px;
+  }
+}
+
+@media only screen and(max-width: 500px){
+  .content-2 .landscapers-pic{
+    width: 100%;
+    float: none;
+  }
+  .content-2 .landscapers-name{
+    padding-top: 10px;
   }
 }
 
@@ -849,7 +892,6 @@ hr {
 
 @media only screen and (max-width: 899px){
   .header-fixed .header-menu {
-    display: none;
     visibility: hidden;
   }
 }

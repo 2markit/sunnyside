@@ -87,32 +87,6 @@ input {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-
-.header-fixed .sub-menu {
-  -webkit-animation-name: fadeOut;
-  -webkit-animation-duration: 0.2s;
-  animation-name: fadeOut;
-  animation-duration: 0.2s;
-  -webkit-animation-name: slideUp;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideUp;
-  animation-duration: 0.4s
-}
-
-.header-fixed menu li:hover .sub-menu {
-  -webkit-animation-name: slideOut;
-  -webkit-animation-duration: 0.3s;
-  animation-name: slideOut;
-  animation-duration: 0.3s
-}
-
-.header-fixed .drop-menu:hover .sub-menu {
-  -webkit-animation-name: slideOut;
-  -webkit-animation-duration: 0.3s;
-  animation-name: slideOut;
-  animation-duration: 0.3s
-}
-
 /* Add Animation */
 @-webkit-keyframes slideIn {
     from {bottom: -300px; opacity: 0}
