@@ -17,6 +17,7 @@ $(function(){
 });
 
 $(document).ready(function(){
+  var $trigger = $(".drop-menu");
     // Show hide popover
     $(".drop-menu").click(function(){
         $(this).find(".sub-menu").slideToggle("fast");
@@ -71,13 +72,13 @@ $(document).ready(function(){
   // Next slide
   $('.carousel').carousel('next');
   // Move next n times.
-  $('.carousel').carousel('next', 3);
+  $('.carousel').carousel('next');
   // Previous slide
   $('.carousel').carousel('prev');
   // Move prev n times.
-  $('.carousel').carousel('prev', 4);
+  $('.carousel').carousel('prev', -4);
   // Set to nth slide
-  $('.carousel').carousel('set', 4);
+  $('.carousel').carousel('set');
 
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 });
@@ -88,15 +89,31 @@ $(document).ready(function(){
   // Next slide
   $('.carousel-small').carousel('next');
   // Move next n times.
-  $('.carousel-small').carousel('next', 3);
+  $('.carousel-small').carousel('next');
   // Previous slide
   $('.carousel-small').carousel('prev');
   // Move prev n times.
-  $('.carousel-small').carousel('prev', 4);
+  $('.carousel-small').carousel('prev', -4);
   // Set to nth slide
-  $('.carousel-small').carousel('set', 4);
+  $('.carousel-small').carousel('set');
 
   $('.carousel-small.carousel-slider').carousel({fullWidth: true});
+});
+
+$(document).ready(function(){
+  $('.carousel-med').carousel();
+  // Next slide
+  $('.carousel-med').carousel('next');
+  // Move next n times.
+  $('.carousel-med').carousel('next');
+  // Previous slide
+  $('.carousel-med').carousel('prev');
+  // Move prev n times.
+  $('.carousel-med').carousel('prev', -4);
+  // Set to nth slide
+  $('.carousel-med').carousel('set');
+
+  $('.carousel-med.carousel-slider').carousel({fullWidth: true});
 });
 
 var acc = document.getElementsByClassName("accordion");
@@ -139,7 +156,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     if (target.length) {
       $('html, body').animate({
-        scrollTop: target.offset().top -90
+        scrollTop: target.offset().top -100
       }, 1000);
       return false;
     }
