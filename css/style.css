@@ -4495,6 +4495,32 @@ button {
   padding: 0px 0px 0px 0px;
   height: 34px; }
 
+/* Popup container - can be anything you want */
+/* The actual popup */
+.popuptext {
+  width: 90px;
+  background-color: #555;
+  opacity: 0.9;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 117%;
+  left: 50%;
+  margin-left: -47.5px;
+  -webkit-box-shadow: 5px 11px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 11px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 11px 31px -7px rgba(0, 0, 0, 0.75);
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 3; }
+
 #phone-kathy i {
   color: #fff;
   margin: 0;
